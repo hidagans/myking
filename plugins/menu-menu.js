@@ -80,34 +80,26 @@ let menu = `⌜ *${wm}* ⌟
 
 *Hola ${taguser}*
 
-□ *Creador: Mario*
-□ *Numero del creador: wa.me/5492266466080*
-□ *Numero del bot ofc: wa.me/573183650526*
-□ *Tiempos activos :* *${uptime}*
-□ *Usuarios:* *${Object.keys(global.db.data.users).length}*
-□ *Registrado: ${rtotalreg} de ${totalreg}* ${(conn.user.jid == global.conn.user.jid ? '' : `\n□ *Soy un sub bot del:* wa.me/${global.conn.user.jid.split`@`[0]}`) || ''}
-    
-□ *COMO INSTALAR EL BOT*
-https://youtu.be/O_j2q5xCg3A
+□ *Runtime :* *${uptime}*
+□ *Users:* *${Object.keys(global.db.data.users).length}*
+□ *Terdaftar: ${rtotalreg} de ${totalreg}* ${(conn.user.jid == global.conn.user.jid ? '' : `\n□ *Soy un sub bot del:* wa.me/${global.conn.user.jid.split`@`[0]}`) || ''}
 
-◉ _*INFO DEL USUARIO*_
-□ *🙌 Registrado:* ${user.registered === true ? '✅' : '❌ _#verificar_'}
+◉ _*INFO USERS*_
+□ *🙌 Register:* ${user.registered === true ? '✅' : '❌ _#verificar_'}
 □ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : '❌ _#pase premium_'}
-□ *🔰 Mi estado:* ${typeof user.miestado !== 'string' ? '_#miestado || Estado no asignado_' : '_Me siento ' + user.miestado + '_'}
-□ *🎖️ Nivel:* ${level}
-□ *💎 Diamantes:* ${limit}
-□ *👾 LoliCoins:* ${money}
+□ *🎖️ Level:* ${level}
+□ *💎 Diamond:* ${limit}
+□ *👾 MajestyCoins:* ${money}
 □ *🪙 Tokens:* ${joincount}
-□ *🧰 Experiencia:* ${exp}
-□ *⚓ Rango:* ${role}
+□ *🧰 EXP:* ${exp}
+□ *⚓ Rank:* ${role}
 ${readMore}
-┌───⊷ *INFO DEL BOT*
+┌───⊷ *INFO BOT*
 ┊□ _${usedPrefix}infobot_
 ┊□ _${usedPrefix}grupos_
 ┊□ _${usedPrefix}instalarbot_
 ┊□️ _${usedPrefix}menu2_
 ┊□ _${usedPrefix}estado_
-┊□ _${usedPrefix}sc_
 ┊□ _${usedPrefix}ping_
 ┊□ _Bot_
 ┊□ _¿Qué es un Bot?_
