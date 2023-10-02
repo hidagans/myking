@@ -40,7 +40,6 @@ const { restrict } = global.db.data.settings[conn.user.jid] || {}
 const { autoread } = global.opts
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let pp = './media/menus/Menu1.jpg'
-let vn = './media/infobot.mp3'
 let name = await conn.getName(m.sender)
 let old = performance.now()
   //await m.reply('_Realizando test_')
@@ -48,27 +47,26 @@ let old = performance.now()
   let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
   let speed = neww - old
 
-let info = `╭─────[ *INFO DEL BOT* ]────✧
-├ 🤴🏻 *CREADOR:* elrebelde
-├ #️⃣ *CONTACTO:* *wa.me/5492266466080*
-├ ✅ *VERSION ACTUAL:* ${vs}
-├ 🎳 *PREFIJO:* *${usedPrefix}*
-├ 🔐 *CHATS PRIVADO:* *${chats.length - groups.length}*
-├ 🦜 *CHATS DE GRUPOS:* *${groups.length}* 
-├ 💡 *CHATS EN TOTAL:* *${chats.length}* 
-├ 🚀 *ACTIVIDAD:* *${uptime}*
-├ 🎩 *USUARIOS:* *${totalreg}*
-├ 🐢 *VELOCIDAD:* *${speed}*   
-├ 🌎 *MODO:* ${global.db.data.settings[conn.user.jid].self ? '*Privado*' : '*Público*'}
-├ 💬 *ANTIPRIVADO:* ${global.db.data.settings[conn.user.jid].antiprivado ? '*Activado ✔*' : '*Desactivado ✘*'}
-├ 📵 *ANTILLAMADA:* ${global.db.data.settings[conn.user.jid].antiCall ? '*Activado ✔*' : '*Desactivado*'}
-├ 🤖 *BOTEMPORAL:* *${global.db.data.settings[conn.user.jid].temporal ? 'Activado ✔' : 'Desactivado ✘'}*
-├ ☑️ *AUTOREAD:*  ${autoread ? '*Activado ✔*' : '*Desactivado ✘*'}   
-├ 🤖 *BOTS SECUNDARIOS ACTIVOS:* *${totaljadibot.length}*
-├ ⛔ *RESTRICT:* ${restrict ? '*Activado ✔*' : '*Desactivado ✘*'} 
+let info = `╭─────[ *INFO BOT* ]────✧
+├ 🤴🏻 *CREATOR:* Putra Yeari
+├ #️⃣ *KONTAK:* *wa.me/6285870345387*
+├ ✅ *VERSION:* ${vs}
+├ 🎳 *PREFIX:* *${usedPrefix}*
+├ 🔐 *CHATS PRIVATE:* *${chats.length - groups.length}*
+├ 🦜 *CHATS GROUP:* *${groups.length}* 
+├ 💡 *CHATS TOTAL:* *${chats.length}* 
+├ 🚀 *ACTIVE:* *${uptime}*
+├ 🎩 *USERS:* *${totalreg}*
+├ 🐢 *SPEED:* *${speed}*   
+├ 🌎 *MODE:* ${global.db.data.settings[conn.user.jid].self ? '*Privado*' : '*Público*'}
+├ 💬 *ANTI PRIVASI:* ${global.db.data.settings[conn.user.jid].antiprivado ? '*Enable ✔*' : '*Disable ✘*'}
+├ 📵 *ANTI CALL:* ${global.db.data.settings[conn.user.jid].antiCall ? '*Enable ✔*' : '*Disable ✘*'}
+├ 🤖 *BOTEMPORAL:* *${global.db.data.settings[conn.user.jid].temporal ? 'Enable ✔' : 'Disable ✘'}*
+├ ☑️ *AUTOREAD:*  ${autoread ? '*Enable ✔*' : '*Disable ✘*'}   
+├ 🤖 *SUB BOT:* *${totaljadibot.length}*
+├ ⛔ *RESTRICT:* ${restrict ? '*Enable ✔*' : '*Disable ✘*'} 
 ╰────────────···`
 await conn.sendMessage(m.chat, {text: info}, {quoted: fkontak});
-conn.sendFile(m.chat, vn, 'infobot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 }
 handler.help = ['infobot']
 handler.tags = ['info', 'tools']
