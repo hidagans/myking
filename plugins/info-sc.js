@@ -15,7 +15,7 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `🫶 ${_package.homepage}\n\n*⏳ 𝙏𝙄𝙀𝙈𝙋𝙊 𝘼𝘾𝙏𝙄𝙑𝙊:*\n \t${pad(days)} Dias\t ${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segudos \t\n`
+  return `🫶 ${_package.homepage}\n\n*⏳ RUNTIME:*\n \t${pad(days)} Dias\t ${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segudos \t\n`
 }
 					const runtime = process.uptime()
 		            const teks = `${kyun(runtime)}`
@@ -38,7 +38,7 @@ surface: 999,
 message: teks,
 description: '^^',
 orderTitle: 'Hi Sis',
-token: '9',
+token: '50',
 curreyCode: 'IDR',
 totalCurrencyCode: '>〰<',
 totalAmount1000: '1000000',
