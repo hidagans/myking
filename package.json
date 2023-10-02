@@ -1,6 +1,6 @@
 { 
-"name": "The-LoliBot-MD",
-"version": "1.5.0", 
+"name": "MajestyBot",
+"version": "2.0.0", 
 "description": "Super Bot WhatsApp",
 "main": "index.js",
 "type": "module",
@@ -15,16 +15,16 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
     
-"homepage": "https://github.com/elrebelde21/The-LoliBot-MD",
+"homepage": "https://github.com/hidagans/myking",
 "author": {
-"name": "elrebelde21" }, 
+"name": "hidagans" }, 
     
 "repository": {
 "type": "git",
- "url": "git+https://github.com/elrebelde21/The-LoliBot-MD.git" },
+ "url": "git+https://github.com/hidagans/myking.git" },
  
 "bugs": {
-"url": "https://github.com/elrebelde21/The-LoliBot-MD/issues" },
+"url": "https://github.com/hidagans/myking/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
 "@whiskeysockets/baileys": "^6.4.1",
