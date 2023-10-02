@@ -1,4 +1,4 @@
-const comandos = /piedra|papel|tijera|estado|verificar|creadora|bottemporal|grupos|instalarbot|términos|bots|deletebot|eliminarsesion|serbot|verify|registrar|deletesesion|jadibot/i
+const comandos = /batu|kertas|gunting|negara|verif|creator|bottemporal|grups|installbot|terminate|bots|deletebot|eliminatesesion|serbot|verify|register|deletesesion|jadibot/i
 export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner, usedPrefix, command }) {
 if (m.isBaileys && m.fromMe) return !0
 if (m.isGroup) return !1
@@ -13,16 +13,16 @@ bot = global.db.data.settings[this.user.jid] || {}
 
 if (bot.antiPrivate && !isOwner && !isROwner) {
 if (user.counterPrivate === 0) {
-mensaje = `Hola *@${m.sender.split`@`[0]}*, Esta prohibido usar el bot el privado\n\n✴️solo si quiere hacerte un bot manda el comando .serbot\n\n🚫NO USAR LOS COMANDO DEL BOT AL PV🚫\n\nPara usar el bot unirte al grupo del oficial del el bot\n${nn}\n\n⚠️ \`\`\`ADVERTENCIA 1/3\`\`\` ⚠️`
+mensaje = `Hai *@${m.sender.split`@`[0]}*, Dilarang menggunakan bot di private\n\n✴️jika Anda ingin menjadikannya bot, kirimkan perintah .serbot\n\n🚫JANGAN GUNAKAN PERINTAH BOT UNTUK MELAKUKAN PV🚫\n\nUntuk menggunakan bot, bergabunglah dengan grup official bot.\n${nn}\n\n⚠️ \`\`\`Peringatan 1/3\`\`\` ⚠️`
 await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] })  
   
 } else if (user.counterPrivate === 1) {
 let grupos = [ nn, nnn, nnnt, nnntt, nnnttt ].getRandom()
-mensaje = `*Otra vez 🤨 ya que dije no escriba al privado 🫤*\n\n*Para usar el bot unirte al grupo oficial aqui 👇*\n${grupos}\n\n*SI VUELVE A ESCRIBIR SERÁ BLOQUEADO(A)* ‼️\n⚠️ \`\`\`ADVERTENCIA 2/3\`\`\` ⚠️`
+mensaje = `*Sekali lagi 🤨 saya katakan jangan gunakan di private 🤨.*\n\n*Untuk menggunakan bot, bergabunglah dengan grup resmi di sini 👇*\n${grupos}\n\n*JIKA ANDA MENGULANGI LAGI, ANDA AKAN DIBLOKIR(A)* ‼️\n⚠️ \`\`\`PERINGATAN 2/3\`\`\` ⚠️`
 await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] }) 
   
 } else if (user.counterPrivate === 2) {
-mensaje = `*@${m.sender.split`@`[0]} 🤨, NO ENTIENDE QUE REPITE 3 VECES NO ESCRIBE AL PRIVADO, AHORA SERA BLOQUEADO.*\n\n⚠️ \`\`\`ADVERTENCIA 3/3 \`\`\` ⚠️`
+mensaje = `*@${m.sender.split`@`[0]} 🤨, TIDAK MENGERTI BAHWA ANDA MENGULANGI 3 KALI MENGGUNAKAN BOT DI PRIBADI, SEKARANG ANDA AKAN DIBLOKIR.*\n\n⚠️ \`\`\`PERINGATAN 3/3 \`\`\` ⚠️`
 await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] }) 
   
 user.counterPrivate = -1
