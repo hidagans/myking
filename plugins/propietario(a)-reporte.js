@@ -1,19 +1,19 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${mg}*𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙚𝙡 𝙧𝙚𝙥𝙤𝙧𝙩𝙚*\n\n*𝙀𝙟𝙚𝙢𝙥𝙡𝙤:*\n*${usedPrefix + command} el comando ${usedPrefix}los stickers no funka.*`
-if (text.length < 8) throw `${fg} ✨ *𝑴𝒊́𝒏𝒊𝒎𝒐 10 𝒄𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒆𝒔 𝒑𝒂𝒓𝒂 𝒉𝒂𝒄𝒆𝒓 𝒆𝒍 𝒓𝒆𝒑𝒐𝒓𝒕𝒆..*`
-if (text.length > 1000) throw `${fg} 😼 *𝑴𝒂́𝒙𝒊𝒎𝒐 1000 𝑪𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒆𝒔 𝒑𝒂𝒓𝒂 𝒉𝒂𝒄𝒆𝒓 𝒆𝒍 𝒓𝒆𝒑𝒐𝒓𝒕𝒆.*`
+if (!text) throw `${mg}*Ketik laporan*\n\n*Contoh:*\n*${usedPrefix + command} perintah ${usedPrefix}sticker tidak berfungsi.*`
+if (text.length < 8) throw `${fg} ✨ *Minimal 10 karakter untuk melakukan laporan*`
+if (text.length > 1000) throw `${fg} 😼 *Maksimal 1000 karakter untuk melakukan laporan.*`
 await delay(5 * 5000)
 let teks = `*_❒═════[ʀᴇᴘᴏʀᴛᴇ]═════╾❒_*\n*_┬_*\n*├ɴᴜᴍᴇʀᴏ: Wa.me/${m.sender.split`@`[0]}*\n*_┴_*\n*_┬_*\n*├ᴍᴇɴsᴀᴊᴇ: ${text}*\n*_┴_*`
 //conn.reply('593968585383@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
 //contextInfo: {
 //mentionedJid: [m.sender]
 //}})
-conn.reply('5492266466080@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
+conn.reply('6285870345387@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
 contextInfo: {
 mentionedJid: [m.sender]
 }})
 await delay(3 * 3000)
-  m.reply(`╰⊱💚⊱ *𝑬́𝒙𝒊𝒕𝒐𝒔* ⊱💚⊱╮\n\n*𝑬𝒍 𝒓𝒆𝒑𝒐𝒓𝒕𝒆 𝒉𝒂 𝒔𝒊𝒅𝒐 𝒆𝒏𝒗𝒊𝒂𝒅𝒐 𝒂 𝒎𝒊 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 , 𝒕𝒆𝒏𝒅𝒓𝒂́ 𝒖𝒏𝒂 𝒓𝒆𝒔𝒑𝒖𝒆𝒔𝒕𝒂 𝒑𝒓𝒐𝒏𝒕𝒐. 𝑫𝒆 𝒔𝒆𝒓 𝒇𝒂𝒍𝒔𝒐 𝒔𝒆𝒓𝒂́ 𝒊𝒈𝒏𝒐𝒓𝒂𝒅𝒐 𝒆𝒍 𝒓𝒆𝒑𝒐𝒓𝒕𝒆.*`)
+  m.reply(`╰⊱💚⊱ *Ketik* ⊱💚⊱╮\n\n*laporan telah dikirim ke owner saya , kamu akan segera mendapatkan jawabannya. Jika salah, laporan akan diabaikan..*`)
 
 }
 
