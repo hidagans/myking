@@ -15,9 +15,9 @@ if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\
 await m.reply(data.success)
 } catch {
 /* SI DA ERROR USARA ESTA OTRA OPCION DE API DE IA QUE RECUERDA EL NOMBRE DE LA PERSONA */
-if (textodem.includes('Hola')) textodem = textodem.replace('Hola', 'Hello')
-if (textodem.includes('hola')) textodem = textodem.replace('hola', 'hello')
-if (textodem.includes('HOLA')) textodem = textodem.replace('HOLA', 'HELLO')    
+if (textodem.includes('Hola')) textodem = textodem.replace('Hai', 'Halo')
+if (textodem.includes('hola')) textodem = textodem.replace('hai', 'halo')
+if (textodem.includes('HOLA')) textodem = textodem.replace('HAI', 'HALO')    
 let reis = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + textodem)
 let resu = await reis.json()  
 let nama = m.pushName || '1'
