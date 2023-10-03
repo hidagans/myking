@@ -1,27 +1,10 @@
 
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
-*Hola 👋🏻, Bienvenido a los grupos oficiales, te invito a unete a los grupos oficiales para pasar un rato agradable usando el Bot o platicando con la familia de LoliBot-MD 😸*
+*Hola 👋🏻, Selamat datang di grup resmi, saya mengundang Anda untuk bergabung dengan grup resmi untuk bersenang-senang menggunakan Bot atau mengobrol dengan keluarga MajesyBot. 😸*
 
-➤ Grupos oficiales del bot:
+➤ Groups Official Bot:
 1) *${nn}*
-
-2) *${nnn}*
-
-➤ Grupo del Colaboracion LoliBot, GataBot-MD
- *${nnnt}*
-
-➤ Grupo del colaboración LoliBot, DorratBot-MD
-*${nnnt2}*
-
-➤ Grupo del col 3 (sin limite)
-*${nnntt}*
-
-➤ Infomarte sobre las nuevas actualizaciones del bot
- *${nna}*
- 
-➤ Grupos del ayuda sobre el bot
- *${nnntttt}*
  
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
