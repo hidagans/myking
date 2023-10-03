@@ -22,7 +22,7 @@ const fechaasi = moment().tz('Asia/Jakarta').format('DD/MM HH:mm')
 const fechabra = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm')
 const fechaafri = moment().tz('Africa/Malabo').format('DD/MM HH:mm')
 await conn.sendMessage(m.chat, { text: `\`\`\`
-「 ZONA-HORARIA ⏰ 」
+「 ZONA WAKTU ⏰ 」
 ⏱️Peru       : ${fechaper}
 ⏱️Mexico     : ${fechamex}
 ⏱️Bolivia    : ${fechabol}
@@ -45,11 +45,11 @@ await conn.sendMessage(m.chat, { text: `\`\`\`
 ⏱️G.N.Q      : ${fechaafri}
 \`\`\`
 ${String.fromCharCode(8206).repeat(850)}
-Zona horaria del servidor actual:\n[ ${Intl.DateTimeFormat().resolvedOptions().timeZone} ]\n${moment().tz(Intl.DateTimeFormat().resolvedOptions().timeZone).format('DD/MM/YY HH:mm:ss')}` }, {quoted: m })
+Zona waktu server saat ini:\n[ ${Intl.DateTimeFormat().resolvedOptions().timeZone} ]\n${moment().tz(Intl.DateTimeFormat().resolvedOptions().timeZone).format('DD/MM/YY HH:mm:ss')}` }, {quoted: m })
 }
 
 handler.help = ['horario']
 handler.tags = ['info']
-handler.command = /^(horario)$/i
+handler.command = /^(waktu)$/i
 
 export default handler
