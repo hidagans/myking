@@ -4,26 +4,26 @@ let handler = async (m, { conn, text }) => {
 let who
 if (m.isGroup) who = m.mentionedJid[0]
 else who = m.chat
-if (!who) throw `${ag}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝘼𝙍 𝘼𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 *@tag*`
+if (!who) throw `${ag}harus menandai pengguna *@tag*`
 let txt = text.replace('@' + who.split`@`[0], '').trim()
-if (!txt) throw `${ag}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙇𝘼 𝘾𝘼𝙉𝙏𝙄𝘿𝘼𝘿 𝘿𝙀 𝙇𝙊𝙇𝙄𝘾𝙊𝙄𝙉𝙎`
-if (isNaN(txt)) throw `${mg}𝙎𝙄𝙉 𝙎𝙄𝙈𝘽𝙊𝙇𝙊𝙎, 𝙎𝙊𝙇𝙊 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙉𝙐𝙈𝙀𝙍𝙊𝙎`
+if (!txt) throw `${ag}masukkan jumlah MajestyCoins`
+if (isNaN(txt)) throw `${mg}tanpa simbol, cukup masukkan angka`
 let gatacoins = parseInt(txt)
 let money = gatacoins
 let pjk = Math.ceil(gatacoins * pajak)
 money += pjk
-if (money < 1) throw `${mg}𝙀𝙇 𝙉𝙐𝙈𝙀𝙍𝙊 𝙈𝙄𝙉𝙄𝙈𝙊 𝘿𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎 𝙀𝙎 *1*`
+if (money < 1) throw `${mg}jumlah minimum untuk MajestyCoins adalah *1*`
 let users = global.db.data.users
 //let users = global.db.data.users[who]
 users[who].money += gatacoins
-m.reply(`╭━━━[ 𝙇𝙊𝙇𝙄𝘾𝙊𝙄𝙉𝙎 🐈 ]━━━⬣\n┃\n┃ღ *PARA:*\n┃ღ ${text}\n┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n┃ღ *SE LE AÑADIÓ*\n┃ღ *${gatacoins} LoliCoin(s)* 🐈\n┃\n╰━━━━━━━━━━━━━━⬣\n\n${wm}`)}
+m.reply(`╭━━━[ MajestyCoins 🐈 ]━━━⬣\n┃\n┃ღ *Untuk:*\n┃ღ ${text}\n┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n┃ღ *Telah ditambahkan*\n┃ღ *${gatacoins} MajestyCoin(s)* 🐈\n┃\n╰━━━━━━━━━━━━━━⬣\n\n${wm}`)}
 /*conn.sendHydrated(m.chat, `╭━━━[ 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎 🐈 ]━━━⬣\n┃\n┃ღ *PARA | FOR:*\n┃ღ *${text}*\n┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n┃ღ *SE LE AÑADIÓ | NOW YOU HAVE*\n┃ღ *${gatacoins} GataCoin(s)* 🐈\n┃\n╰━━━━━━━━━━━━━━⬣`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
 }*/ 
-handler.help = ['addgb <@user>']
+handler.help = ['addcoins <@user>']
 handler.tags = ['gatacoins']
-handler.command = ['añadirlolicoins', 'añadirloli', 'añadircoins', 'dargatacoins', 'dargata', 'darcoins'] 
+handler.command = ['tfcoins', 'addcoins', 'tambahcoins'] 
 handler.group = true
 handler.rowner = true
 export default handler
