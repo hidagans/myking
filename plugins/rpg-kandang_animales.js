@@ -29,7 +29,7 @@ let handler = async (m, { conn, usedPrefix}) => {
 	let ayam = global.db.data.users[m.sender].ayam
 
 	let ndy = `
-*${htki} 𝘼𝙉𝙄𝙈𝘼𝙇𝙀𝙎 ${htka}*
+*${htki} ANIMALS ${htka}*
     
  *${rpg.emoticon('bull')} ➡️ ${banteng}*
  *${rpg.emoticon('tiger')} ➡️ ${harimau}*
