@@ -15,7 +15,7 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `🫶 ${_package.homepage}\n\n*⏳ RUNTIME:*\n \t${pad(days)} Dias\t ${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segudos \t\n`
+  return `🫶 ${_package.homepage}\n\n*⏳ RUNTIME:*\n \t${pad(days)} Days\t ${pad(hours)} Hours ${pad(minutes)} Minutes ${pad(seconds)} Seconds \t\n`
 }
 					const runtime = process.uptime()
 		            const teks = `${kyun(runtime)}`
@@ -42,7 +42,7 @@ token: '50',
 curreyCode: 'IDR',
 totalCurrencyCode: '>〰<',
 totalAmount1000: '1000000',
-sellerJid: 'https://github.com/elrebelde21/The-LoliBot-MD',
+sellerJid: 'https://mediailmu.cloud',
 thumbnail: fs.readFileSync('./src/avatar_contact.png')
 }}, {contextInfo: null, quoted: m})
 conn.relayWAMessage(prep)
