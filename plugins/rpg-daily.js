@@ -41,7 +41,7 @@ const recompensas = {
 }
 
 let time = user.lastclaim + 7200000 //2 Horas 7200000
-if (new Date - user.lastclaim < 7200000) return await conn.reply(m.chat, `𝙔𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙨𝙩𝙚 𝙩𝙪 𝙧𝙚𝙜𝙖𝙡𝙤 🎁\n𝙑𝙪𝙚𝙡𝙫𝙚 𝙚𝙣 *${msToTime(time - new Date())}* 𝙋𝙖𝙧𝙖 𝙫𝙤𝙡𝙫𝙚𝙧 𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙧`, fkontak,  m)
+if (new Date - user.lastclaim < 7200000) return await conn.reply(m.chat, `Kamu telah mengklaim hadiah kamu 🎁\nTunggu *${msToTime(time - new Date())}* Untuk mendapatkan kembali`, fkontak,  m)
 //await conn.sendButton(m.chat, `𝙔𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙨𝙩𝙚 𝙩𝙪 𝙧𝙚𝙜𝙖𝙡𝙤 🎁\n𝙑𝙪𝙚𝙡𝙫𝙚 𝙚𝙣 *${msToTime(time - new Date())}* 𝙋𝙖𝙧𝙖 𝙫𝙤𝙡𝙫𝙚𝙧 𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙧`, wm, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
@@ -49,8 +49,8 @@ for (let reward of Object.keys(recompensas)) {
     user[reward] += recompensas[reward]
 texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n┃ `}
 let text = `╭━━🎁━🎁━🎁━━⬣
-┃ ✨ 𝙊𝙗𝙩𝙞𝙚𝙣𝙚 𝙪𝙣 𝙧𝙚𝙜𝙖𝙡𝙤!!
-┃ *${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*
+┃ ✨ Mendapatkan hadiah!!
+┃ *${premium ? '🎟️ Hadiah Premium' : '🆓 Hadiah Gratis'}*
 ┃ ${texto}
 ╰━━🎁━🎁━🎁━━⬣
 
@@ -79,5 +79,5 @@ function msToTime(duration) {
   minutes = (minutes < 10) ? "0" + minutes : minutes
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
-  return hours + " Horas " + minutes + " Minutos"
+  return hours + " Hours " + minutes + " Minutes"
 }
