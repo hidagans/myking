@@ -58,7 +58,7 @@ let info = `╭─────[ *INFO BOT* ]────✧
 ├ 🚀 *ACTIVE:* *${uptime}*
 ├ 🎩 *USERS:* *${totalreg}*
 ├ 🐢 *SPEED:* *${speed}*   
-├ 🌎 *MODE:* ${global.db.data.settings[conn.user.jid].self ? '*Privado*' : '*Público*'}
+├ 🌎 *MODE:* ${global.db.data.settings[conn.user.jid].self ? '*Privasi*' : '*Publik*'}
 ├ 💬 *ANTI PRIVASI:* ${global.db.data.settings[conn.user.jid].antiprivado ? '*Enable ✔*' : '*Disable ✘*'}
 ├ 📵 *ANTI CALL:* ${global.db.data.settings[conn.user.jid].antiCall ? '*Enable ✔*' : '*Disable ✘*'}
 ├ 🤖 *BOTEMPORAL:* *${global.db.data.settings[conn.user.jid].temporal ? 'Enable ✔' : 'Disable ✘'}*
