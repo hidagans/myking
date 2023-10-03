@@ -1,7 +1,7 @@
 
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
-*Hola 👋🏻, Selamat datang di grup resmi, saya mengundang Anda untuk bergabung dengan grup resmi untuk bersenang-senang menggunakan Bot atau mengobrol dengan keluarga MajesyBot. 😸*
+*Hai 👋🏻, Selamat datang di grup resmi, saya mengundang Anda untuk bergabung dengan grup resmi untuk bersenang-senang menggunakan Bot atau mengobrol dengan keluarga MajesyBot. 😸*
 
 ➤ Groups Official Bot:
 1) *${nn}*
