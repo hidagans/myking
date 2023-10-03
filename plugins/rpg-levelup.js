@@ -11,7 +11,7 @@ const { levelling } = '../lib/levelling.js'
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 let d = new Date(new Date + 3600000)
-let locale = 'es'
+let locale = 'id'
 let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
 let week = d.toLocaleDateString(locale, { weekday: 'long' })
 let date = d.toLocaleDateString(locale, {
@@ -68,41 +68,41 @@ let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
-┌───⊷ *𝑵𝑰𝑽𝑬𝑳*
-┆ *𝑵𝑶𝑴𝑩𝑹𝑬*
+┌───⊷ *LEVEL*
+┆ *NAMA*
 ┆ ${name}
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝑵𝑰𝑽𝑬𝑳:* *${user.level}*
+┆ *LEVEL:* *${user.level}*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝑹𝑨𝑵𝑮𝑶:* ${role}
+┆ *RANK:* ${role}
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝑿𝑷:* *${user.exp - min}/${xp}*
+┆ *EXP:* *${user.exp - min}/${xp}*
 ╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
 
-_*te falta ${max - user.exp} de XP para subir de nivel*_
+_*Anda kurang ${max - user.exp} dari XP untuk naik level*_
 `.trim()}
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
         let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
-        let str = `┌───⊷ *𝑵𝑰𝑽𝑬𝑳*
-┆ *𝑵𝑰𝑽𝑬𝑳 𝑨𝑵𝑻𝑬𝑹𝑰𝑶𝑹:* *${before}*
+        let str = `┌───⊷ *LEVEL*
+┆ *LEVEL SEBELUMNYA:* *${before}*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝑵𝑰𝑽𝑬𝑳 𝑨𝑪𝑻𝑼𝑨𝑳:* *${user.level}*
+┆ *LEVEL SEKARANG:* *${user.level}*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝑹𝑨𝑵𝑮𝑶:* ${role}
+┆ *RANK:* ${role}
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝑭𝑬𝑪𝑯𝑨:* *${new Date().toLocaleString('id-ID')}*
+┆ *WAKTU:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
 
-_*Cuanto mas interactues con el bot mayor sera tu nivel!!*_
+_*Semakin sering Anda berinteraksi dengan bot, semakin tinggi level Anda.!!*_
 `.trim()
         try {
             const img = await levelup(teks, user.level)
             conn.sendMessage(m.chat, {image: {url: img}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
             //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
-        conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": gataImg.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', "sourceUrl": 'https://youtu.be/O_j2q5xCg3A?si=UJ1xkg6g3fRDJhRb', }}}, { quoted: m })
+        conn.sendMessage(m.chat, {text: str, contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid:[who], image: {url: img}, "externalAdReply":  {"showAdAttribution": true, "renderLargerThumbnail": true, "thumbnail": gataImg.getRandom(), "title": wm, "containsAutoReply": true, "mediaType": 1, "mediaUrl": 'https://mediailmu.cloud', "sourceUrl": 'https://mediailmu.cloud', }}}, { quoted: m })
             //m.reply(str)
 }}}
 handler.help = ['levelup']
