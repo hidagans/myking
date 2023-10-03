@@ -59,37 +59,37 @@ irq: 0
 }})
 
 let old = performance.now()
-const { key } = await conn.sendMessage(m.chat, {text: `𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀...`}, {quoted: fkontak});
+const { key } = await conn.sendMessage(m.chat, {text: `tes kecepatan awal 🚀...`}, {quoted: fkontak});
 // await delay(1000 * 2);
 //await conn.reply(m.chat, `𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀...`, fkontak,  m)
 let neww = performance.now()
 let speed = neww - old
-let caption = `*🚀 Velocidad 🚀*
+let caption = `*🚀 Kecepatan 🚀*
 
 🚄 *${Math.round(neww - old)}* ms
 🚄 *${speed}* ms
 
-*${htjava}* *TIEMPO ACTIVOS*
+*${htjava}* *WAKTU AKTIF*
 ${muptime}
 ${readMore}
 *${htjava} C H A T S*
-▢ *${groupsIn.length}* _Chats de grupo_
-▢ *${groupsIn.length}* _Grupos unidos_
-▢ *${groupsIn.length - groupsIn.length}* _Grupos abandonados_
-▢ *${chats.length - groupsIn.length}* _Chats Privados_
+▢ *${groupsIn.length}* _Chats Groups_
+▢ *${groupsIn.length}* _Groups joined_
+▢ *${groupsIn.length - groupsIn.length}* _Groups abandoned_
+▢ *${chats.length - groupsIn.length}* _Private Chats_
 ▢ *${chats.length}* _Total Chats_
 
-*${htjava} S E R V I D O R : S E R V E R*
+*${htjava}S E R V E R*
 *🟢 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 RAM Libre:* ${format(freemem())}
 
-*💻 Plataforma :* \`\`\`${os.platform()}\`\`\`
-*📡 Servidor :* _${os.hostname()}_
+*💻 Platform :* \`\`\`${os.platform()}\`\`\`
+*📡 Server :* _${os.hostname()}_
 ${readMore}
-*NodeJS Uso de memoria : Memory Usage*
+*Memory Usage*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 
-${cpus[0] ? `*Uso total de la CPU*
+${cpus[0] ? `*Total CPU usage*
 ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
 
 *CPU Core(s) Uso (${cpus.length} Core CPU)*
@@ -99,7 +99,7 @@ await conn.sendMessage(m.chat, {text: caption, edit: key});
 //await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', caption, fkontak)
 ///await conn.sendButton(m.chat, wm, caption, gata.getRandom(), [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
 } catch (e) {
-await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL.*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``, m)
+await conn.reply(m.chat, `${fg}*SOMETHING WENT WRONG.*\n\n\`\`\`REPORT THIS COMMAND ${usedPrefix + command} WITH COMMAND ${usedPrefix}lapor\`\`\``, m)
 }}
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
@@ -114,5 +114,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [' ' + d, ' *Días ☀️*\n ', h, ' *Horas 🕐*\n ', m, ' *Minuto ⏰*\n ', s, ' *Segundo ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
+  return [' ' + d, ' *Hari ☀️*\n ', h, ' *Jam 🕐*\n ', m, ' *Menit ⏰*\n ', s, ' *Detik ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
 }
