@@ -77,7 +77,7 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
 
 let menu = `⌜ *${wm}* ⌟  
 
-*Hola ${taguser}*
+*Hai ${taguser}*
 
 □ *Runtime :* *${uptime}*
 □ *Users:* *${Object.keys(global.db.data.users).length}*
