@@ -81,7 +81,7 @@ ${readMore}
 
 *${htjava}S E R V E R*
 *🟢 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*🔵 RAM Libre:* ${format(freemem())}
+*🔵 Free RAM:* ${format(freemem())}
 
 *💻 Platform :* \`\`\`${os.platform()}\`\`\`
 *📡 Server :* _MyPersonalComputer_
