@@ -105,9 +105,9 @@ ${readMore}
 ┊□ _Syarat dan Ketentuan_
 └─────────────
 
-┌───⊷ *UNER UN BOT A TU GRUPO*
-┆ 🤖 _${usedPrefix}join *link del grupo*_ 
-┆ 🤖 _${usedPrefix}botemporal *link de grupo*_
+┌───⊷ *MASUKAN BOT KE GRUP*
+┆ 🤖 _${usedPrefix}join *link grup*_ 
+┆ 🤖 _${usedPrefix}botemporal *link grup*_
 └─────────────
 
 ┌───⊷ *SERBOT & JADIBOT*
@@ -116,31 +116,19 @@ ${readMore}
 ┆ 🤖 _${usedPrefix}bots_
 └─────────────
 
-┌───⊷ *JUEGOS*
-┆ *conando para la diversión del tu Grupos*
+┌───⊷ *PERMAINAN*
+┆ *Perintah untuk hiburan di grup*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆🕹 _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-┆🕹️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
-┆🕹 _${usedPrefix}prostituto *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}prostituta *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}gay2 *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}lesbiana *<nombre / @tag>*_
-┆🕹 _${usedPrefix}pajero *<nombre / @tag>*_
-┆🕹 _${usedPrefix}pajera *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}puto *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}puta *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}manco *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}manca *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}rata *<nombre / @tag>*_
+┆🕹️ _${usedPrefix}ppt *<kertas /gunting /batu>*_
 ┆🕹️ _${usedPrefix}love *<nombre / @tag>*_
-┆🕹️ _${usedPrefix}doxear *<nombre / @tag>*_
-┆🕹 _${usedPrefix}pregunta *<texto>*_
+┆🕹 _${usedPrefix}pertanyaan *<text>*_
 ┆🕹️ _${usedPrefix}suitpvp *<@tag>*_
-┆🕹️ _${usedPrefix}slot *<apuesta>*_
+┆🕹️ _${usedPrefix}slot *<taruhan>*_
 ┆🕹️ _${usedPrefix}ttt *<nombre sala>*_
 ┆🕹️ _${usedPrefix}delttt_
-┆🕹️ _${usedPrefix}simi *<texto>*_
-┆🕹️ _${usedPrefix}top *<texto>*_
+┆🕹️ _${usedPrefix}simi *<text>*_
+┆🕹️ _${usedPrefix}top *<text>*_
 ┆🕹️ _${usedPrefix}topotakus_
 ┆🕹️️ _${usedPrefix}top10gays_
 ┆🕹️️ _${usedPrefix}toplind@s_
