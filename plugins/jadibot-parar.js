@@ -1,7 +1,7 @@
 let handler  = async (m, { conn }) => {
-if (global.conn.user.jid == conn.user.jid) conn.reply(m.chat, `Por qué no vas directamente con el numero del Bot`, m)
+if (global.conn.user.jid == conn.user.jid) conn.reply(m.chat, `Mengapa Anda tidak langsung masuk ke nomor Bot?`, m)
 else {
-await conn.reply(m.chat, `Usted ha cerrado session`, m)
+await conn.reply(m.chat, `Anda telah menutup sesi`, m)
 conn.ws.close()
 }}
 handler.command = /^(berhenti|stop|detener)$/i
