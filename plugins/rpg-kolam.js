@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
 let grupos = [nna, nn, nnn, nnnt]
 let gata = [img5, img6, img7, img8, img9]
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'LoliBot ', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}} 
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'MajestyBot ', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}} 
 let dos = [enlace, enlace2]  
 
 let name = global.db.data.users[m.sender].name
@@ -24,11 +24,11 @@ let ikan = global.db.data.users[m.sender].ikan
 let orca = global.db.data.users[m.sender].orca
 //let wm = global.wm 
 let pp = gataMenu.getRandom()
-let peces = `🌊🌊 𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦 🌊🌊
+let peces = `🌊🌊 KOLAM IKAN 🌊🌊
 👤» *${name}*
 
 ╭━━━━━━━━━⬣ 
-┃ *𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦*
+┃ *KOLAM IKAN*
 ┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
 ┃ 🦈 *Tiburón : Shark » ${hiu}*
 ┃ 🐟 *Pez : Fish » ${ikan}*
