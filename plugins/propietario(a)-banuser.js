@@ -35,8 +35,6 @@ users = global.db.data.users
 if (users[user].banned === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
 users[user].banned = true
 usr = m.sender.split('@')[0]     
-let ban = './media/baneado.mp3'
-conn.sendFile(m.chat, ban, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})
 //await conn.reply(m.chat, lenguajeGB.smsPropban5(), null, { mentions: [user] })   
 //await conn.reply(user, lenguajeGB.smsPropban6(number, usr), null, { mentions: [user, m.sender] })
 }} catch (e) {
