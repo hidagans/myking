@@ -20,7 +20,7 @@ m.reply(`*╭[ 💎 Diamond 💎 ]⬣*\n┃\n┃ღ *Untuk:*\n┃ღ *${text}*\n
 ['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 💗', '.rpgmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
 }*/
-handler.help = ['adddi <@user>']
+handler.help = ['adddm <@user>']
 handler.tags = ['xp']
 handler.command = ['tfdm', 'adddm', 'tfdiamond'] 
 handler.group = true
