@@ -84,7 +84,7 @@ ${readMore}
 *🔵 RAM Libre:* ${format(freemem())}
 
 *💻 Platform :* \`\`\`${os.platform()}\`\`\`
-*📡 Server :* _${os.hostname()}_
+*📡 Server :* _MyPersonalComputer_
 ${readMore}
 *Memory Usage*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
