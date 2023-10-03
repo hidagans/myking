@@ -12,7 +12,7 @@ let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 
 let d = new Date(new Date + 3600000)
-let locale = 'es'
+let locale = 'id'
 let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
 let week = d.toLocaleDateString(locale, { weekday: 'long' })
 let date = d.toLocaleDateString(locale, {
@@ -70,28 +70,28 @@ let mentionedJid = [who]
 let username = conn.getName(who)
 
 let tex = `╭━━〔 *${wm}* 〕━━⬣
-┃ ✪ *𝙉𝙤𝙢𝙗𝙧𝙚* 
+┃ ✪ *Nama* 
 ┃ ${username}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖  (𝙚𝙭𝙥)* 
+┃ ✪ *EXP  (𝙚𝙭𝙥)* 
 ┃ ➥ *${user.exp - min}/${xp}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *𝙉𝙞𝙫𝙚𝙡*
+┃ ✪ *LEVEL*
 ┃ ➥ *${level}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *𝙍𝙤𝙡*
+┃ ✪ *Rank*
 ┃ ➥ ${role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨*
+┃ ✪ *MajestyCoins*
 ┃ ➥ *$${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨* 
+┃ ✪ *Diamond* 
 ┃ ➥ *$${limit}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *𝙁𝙚𝙘𝙝𝙖*
+┃ ✪ *Waktu*
 ┃ ➥ *${week}, ${date}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤*
+┃ ✪ *Pengguna*
 ┃ ➥ *${Object.keys(global.db.data.users).length}* 
 ╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣`
 await conn.sendFile(m.chat, pp, 'gata.jpg', tex, fkontak, { mentions: [aa,] })
@@ -102,7 +102,7 @@ await conn.sendFile(m.chat, pp, 'gata.jpg', tex, fkontak, { mentions: [aa,] })
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(xp|experiencia|esperiencia|esperiensia|experiensia|exp|coinsgata|coins)$/i
+handler.command = /^(xp|experiencia|esperiencia|esperiensia|experiensia|exp|coinsmajesty|coins)$/i
 handler.exp = 10
 export default handler
 
