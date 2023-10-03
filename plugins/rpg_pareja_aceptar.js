@@ -50,7 +50,7 @@ return await conn.reply(m.chat, `Anda tidak dapat menerima jika tidak ada yang m
 	
 }else{
 global.db.data.users[m.sender].pasangan = user
-return await conn.reply(m.chat, `🥳😻 𝙁𝙀𝙇𝙄𝘾𝙄𝙏𝘼𝘾𝙄𝙊𝙉𝙀𝙎!!! *${tu}*\n✅ secara resmi mereka menjalin hubungan\n\nsemoga cinta dan kebahagiaan mereka bertahan selamanya 💖😁\n\n*${tu} 💞 ${yo}\n${wm}`, fkontak,
+return await conn.reply(m.chat, `🥳😻 SELAMAT!!! *${tu}*\n✅ secara resmi mereka menjalin hubungan\n\nsemoga cinta dan kebahagiaan mereka bertahan selamanya 💖😁\n\n*${tu} 💞 ${yo}\n${wm}`, fkontak,
 /*await conn.sendButton(m.chat, `🥳😻 𝙁𝙀𝙇𝙄𝘾𝙄𝙏𝘼𝘾𝙄𝙊𝙉𝙀𝙎!!! *${tu}*\n✅ 𝘿𝙀 𝙈𝘼𝙉𝙀𝙍𝘼 𝙊𝙁𝙄𝘾𝙄𝘼𝙇 𝙀𝙎𝙏𝘼𝙉 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉\n\n𝙌𝙐𝙀 𝘿𝙐𝙍𝙀 𝙋𝙊𝙍 𝙎𝙄𝙀𝙈𝙋𝙍𝙀 𝙎𝙐 𝘼𝙈𝙊𝙍 𝙔 𝙁𝙀𝙇𝙄𝘾𝙄𝘿𝘼𝘿 💖😁\n\n💝 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇𝙇𝙔 𝙏𝙃𝙀𝙔 𝘼𝙍𝙀 𝙄𝙉 𝘼 𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋`, `*${tu} 💞 ${yo}*\n` + wm, img5, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']],*/m, dos.getRandom(), { contextInfo: { mentionedJid: [user, tu, yo]}})
 }}}
