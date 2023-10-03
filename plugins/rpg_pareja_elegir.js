@@ -15,7 +15,7 @@ do b = ps.getRandom()
 while (b === a)
     
 if (command == 'futurarelacion') {    
-let caption = `💗 𝗙𝗨𝗧𝗨𝗥𝗔 𝗣𝗔𝗥𝗘𝗝𝗔 💗\n${toM(a)} 💞 ${toM(b)}\n\n💌 𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗗𝗘 𝗔𝗠𝗢𝗥\n*_${await ktnmbk.getRandom()}_*`
+let caption = `💗 mitra masa depan 💗\n${toM(a)} 💞 ${toM(b)}\n\n💌 pesan cinta\n*_${await ktnmbk.getRandom()}_*`
 await conn.reply(m.chat, caption, fkontak, m)
 /*await conn.sendButton(m.chat, caption, `*_Si quiere tener una pareja use el comando ${usedPrefix}pareja etiquetando a tu futura Pareja._*\n\n` + wm, null, [
 ['🤭 𝙌𝙐𝙀 𝙎𝙀 𝘿𝙀𝘾𝙇𝘼𝙍𝙀𝙉', `amor`],
@@ -29,7 +29,7 @@ var number = text.split`@`[1]
 var number = text
 }
 
-if(!text && !m.quoted) return await conn.reply(m.chat, `${mg}𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙀 𝙊 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘿𝙀 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝙀 𝙌𝙐𝙀 𝙎𝙀𝘼 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼`, fkontak,  m)
+if(!text && !m.quoted) return await conn.reply(m.chat, `${mg}menandai atau membalas pesan orang yang Anda inginkan untuk menjadi pasangan Anda`, fkontak,  m)
 /*await conn.sendButton(m.chat, `${mg}𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙀 𝙊 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘿𝙀 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝙀 𝙌𝙐𝙀 𝙎𝙀𝘼 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼\n\n𝙏𝘼𝙂 𝙊𝙍 𝙍𝙀𝙋𝙇𝙔 𝙏𝙊 𝙏𝙃𝙀 𝙈𝙀𝙎𝙎𝘼𝙂𝙀 𝙁𝙍𝙊𝙈 𝙏𝙃𝙀 𝙋𝙀𝙍𝙎𝙊𝙉 𝙔𝙊𝙐 𝙒𝘼𝙉𝙏 𝙏𝙊 𝘽𝙀 𝙔𝙊𝙐𝙍 𝙋𝘼𝙍𝙏𝙉𝙀𝙍`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)*/
 	
@@ -45,19 +45,19 @@ var user = number + '@s.whatsapp.net'
 } finally {
 let users = m.isGroup ? participants.find(v => areJidsSameUser(v.jid == user)) : {}
 	
-if(!users) return await conn.reply(m.chat, `${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝘼 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼, 𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝙏𝘼𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊`, fkontak,  m)
+if(!users) return await conn.reply(m.chat, `${fg}pengguna tidak ditemukan, pengguna harus di grup ini`, fkontak,  m)
 /*await conn.sendButton(m.chat, `${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝘼 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼, 𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝙏𝘼𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊\n\n𝙏𝙃𝙀 𝙋𝙀𝙍𝙎𝙊𝙉 𝙒𝘼𝙎 𝙉𝙊𝙏 𝙁𝙊𝙐𝙉𝘿, 𝙏𝙃𝙀𝙔 𝙈𝙐𝙎𝙏 𝘽𝙀 𝙄𝙉 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)*/
 	
-if(user === m.sender) return await conn.reply(m.chat, `${fg}𝙐𝙎𝙏𝙀𝘿 𝙈𝙄𝙎𝙈𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝙎𝙀𝙍 𝙋𝘼𝙍𝙀𝙅𝘼`, fkontak,  m)
+if(user === m.sender) return await conn.reply(m.chat, `${fg}Kamu tidak bisa menjadikan dirimu pasangan`, fkontak,  m)
 /*await conn.sendButton(m.chat, `${fg}𝙐𝙎𝙏𝙀𝘿 𝙈𝙄𝙎𝙈𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝙎𝙀𝙍 𝙋𝘼𝙍𝙀𝙅𝘼\n\n𝙔𝙊𝙐 𝙔𝙊𝙐𝙍𝙎𝙀𝙇𝙁 𝘾𝘼𝙉𝙉𝙊𝙏 𝘽𝙀 𝘼 𝙋𝘼𝙍𝙏𝙉𝙀𝙍`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)*/
 	
-if(user === conn.user.jid) return await conn.reply(m.chat, `${fg}𝙔𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙎𝙀𝙍 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼 😹`, fkontak,  m)
+if(user === conn.user.jid) return await conn.reply(m.chat, `${fg}Saya tidak bisa menjadi pasangan dia 😹`, fkontak,  m)
 /*await conn.sendButton(m.chat, `${fg}𝙔𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙎𝙀𝙍 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼 😹\n\n𝙒𝙄𝙏𝙃 𝙈𝙀 𝙔𝙊𝙐 𝘾𝘼𝙉𝙉𝙊𝙏 𝘽𝙀 𝘼 𝘾𝙊𝙐𝙋𝙇𝙀`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)*/
 
-if (typeof global.db.data.users[user] == "undefined") return await conn.reply(m.chat, `${fg}𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙊 𝙉𝙊 𝙀𝙎𝙏𝘼 𝙀𝙉 𝙈𝙄 𝘽𝘼𝙎𝙀 𝘿𝙀 𝘿𝘼𝙏𝙊𝙎`, fkontak,  m)
+if (typeof global.db.data.users[user] == "undefined") return await conn.reply(m.chat, `${fg}orang yang kamu tandai tidak ada di database saya`, fkontak,  m)
 /*await conn.sendButton(m.chat, `${fg}𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙊 𝙉𝙊 𝙀𝙎𝙏𝘼 𝙀𝙉 𝙈𝙄 𝘽𝘼𝙎𝙀 𝘿𝙀 𝘿𝘼𝙏𝙊𝙎\n\n𝙏𝙃𝙀 𝙋𝙀𝙍𝙎𝙊𝙉 𝙄 𝙏𝘼𝙂 𝙄𝙎 𝙉𝙊𝙏 𝙄𝙉 𝙈𝙔 𝘿𝘼𝙏𝘼𝘽𝘼𝙎𝙀`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)*/
 	
@@ -67,7 +67,7 @@ let yo = conn.getName(m.sender)
 let tu = conn.getName(who)
 
 if(global.db.data.users[m.sender].pasangan != "" && global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender && global.db.data.users[m.sender].pasangan != user){
-await conn.reply(m.chat, `𝙀𝙍𝙀𝙎 𝙄𝙉𝙁𝙄𝙀𝙇 🙀😠 𝙋𝙀𝙍𝙊 𝙎𝙄 𝙔𝘼 𝙀𝙎𝙏𝘼𝙎 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉 *${await conn.getName(spac)}*\n\n𝘼𝘾𝘼𝙎𝙊 𝙌𝙐𝙄𝙀𝙍𝙀𝙎 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙍 𝙇𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉? 🤔\n𝘿𝙀 𝙎𝙀𝙍 𝘼𝙎𝙄, 𝙀𝙎𝘾𝙍𝙄𝘽𝘼 *${usedPrefix}terminar @tag* 𝙋𝘼𝙍𝘼 𝙌𝙐𝙀 𝙋𝙐𝙀𝘿𝘼 𝙏𝙀𝙉𝙀𝙍 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉 *${await conn.getName(user)}*`, fkontak, m, 
+await conn.reply(m.chat, `Kamu tidak setia 🙀😠 tetapi jika Anda sudah menjalin hubungan dengan *${await conn.getName(spac)}*\n\n Anda ingin mengakhiri hubungan? 🤔\njika ya, masukkan *${usedPrefix}putuskan @tag* sehingga dapat memiliki hubungan dengan *${await conn.getName(user)}*`, fkontak, m, 
 /*await conn.sendButton(m.chat, `𝙀𝙍𝙀𝙎 𝙄𝙉𝙁𝙄𝙀𝙇 🙀😠 𝙋𝙀𝙍𝙊 𝙎𝙄 𝙔𝘼 𝙀𝙎𝙏𝘼𝙎 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉 *${await conn.getName(spac)}*\n\n𝘼𝘾𝘼𝙎𝙊 𝙌𝙐𝙄𝙀𝙍𝙀𝙎 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙍 𝙇𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉? 🤔\n𝘿𝙀 𝙎𝙀𝙍 𝘼𝙎𝙄, 𝙀𝙎𝘾𝙍𝙄𝘽𝘼 *${usedPrefix}terminar @tag* 𝙋𝘼𝙍𝘼 𝙌𝙐𝙀 𝙋𝙐𝙀𝘿𝘼 𝙏𝙀𝙉𝙀𝙍 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉 *${await conn.getName(user)}*`, wm, null, [
 ['❤️ 𝙈𝘼𝙉𝙏𝙀𝙉𝙀𝙍 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉', '.mipareja'],
 ['💔 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙍 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉', '/terminar']]*/ { contextInfo: { mentionedJid: [m.sender, who, user, global.db.data.users[m.sender].pasangan]}})
@@ -75,67 +75,67 @@ await conn.reply(m.chat, `𝙀𝙍𝙀𝙎 𝙄𝙉𝙁𝙄𝙀𝙇 🙀😠 �
 	
 if (pacar){
 if (m.sender == pacar && global.db.data.users[m.sender].pasangan == user) return conn.reply(m.chat, `ya estas saliendo ${spac.split('@')[0]}`, m , { contextInfo: { mentionedJid: [spac]}})
-conn.reply(m.chat, `𝙉𝙊 𝙋𝙐𝙀𝘿𝙀𝙎 𝙋𝙊𝙍𝙌𝙐𝙀 *${await conn.getName(user)}* 𝙔 ${await conn.getName(pacar)} 𝙀𝙎𝙏𝘼𝙉 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉\n𝘽𝙐𝙎𝙌𝙐𝙀 𝙊𝙏𝙍𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝘼 𝙎𝙀𝙍 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼`, m , { contextInfo: { mentionedJid: [m.sender, global.db.data.users[m.sender].pasangan]}})
+conn.reply(m.chat, `Anda tidak dapat melakukannya karena *${await conn.getName(user)}* 𝙔 ${await conn.getName(pacar)}berada dalam suatu hubungan\nsilahkab cari orang lain yang ingin menjadi pasangan Anda`, m , { contextInfo: { mentionedJid: [m.sender, global.db.data.users[m.sender].pasangan]}})
 }else{
 	
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nAcabas de invitar @${user.split('@')[0]}\n\n¡Por favor espere una respuesta!`, m , { contextInfo: { mentionedJid: [user]}})
+conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nAcabas de invitar @${user.split('@')[0]}\n\n¡Mohon tunggu balasannya!`, m , { contextInfo: { mentionedJid: [user]}})
 }	
 	
 }else if (global.db.data.users[user].pasangan == m.sender){
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
+conn.reply(m.chat, `Selamat, Anda secara resmi sudah bisa keluar @${user.split('@')[0]}\n\nSemoga langgeng dan selalu bahagia 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
 }else {
 	
 global.db.data.users[m.sender].pasangan = user
-await conn.reply(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*@${toUser}* 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝙉𝘿𝙊!!! 😳\n𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 *@${who.split`@`[0]}* 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼 𝙇𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝘾𝙄𝙊𝙉 🙀\n\n❤️ *_Si quieres una Relacion escriba:_*\n*➠ ${usedPrefix}aceptar @${toUser}*\n\n💔 *_De no querer una Relacion escriba:_*\n*➠ ${usedPrefix}rechazar @${toUser}*\n\n${wm}`, fkontak, { mentions: [aa,] })
+await conn.reply(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*@${toUser}* sedang dinyatakan!!! 😳\nsilakan *@${who.split`@`[0]}* menanggapi deklarasi tersebut 🙀\n\n❤️ *_Jika Anda menginginkan Hubungan, tulislah:_*\n*➠ ${usedPrefix}terima @${toUser}*\n\n💔 *_Jika Anda tidak menginginkan hubungan, tulis:_*\n*➠ ${usedPrefix}tolak @${toUser}*\n\n${wm}`, fkontak, { mentions: [aa,] })
 /*await conn.sendButton(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*${await conn.getName(m.sender)}* 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝙉𝘿𝙊!!! 😳\n𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 *${await conn.getName(who)}* 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼 𝙇𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝘾𝙄𝙊𝙉 🙀`, `❤️ *_Si quieres una Relacion escriba:_*\n*➠ ${usedPrefix}aceptar @${conn.getName(m.sender)}*\n\n💔 *_De no querer una Relacion escriba:_*\n*➠ ${usedPrefix}rechazar @${conn.getName(m.sender)}*\n\n` + wm, null, [
 ['🥳 𝙑𝘼𝙈𝙊𝙎 𝘼𝘾𝙀𝙋𝙏𝘼', `Amor`]],*/ 
 }}}
 
-handler.command = /^(futurarelacion|pareja|elegirpareja|serpareja|sersupareja|couple|elegirpareja)$/i
+handler.command = /^(pacar|tembak|couple|pilih)$/i
 handler.group = true
 
 export default handler
 
 let ktnmbk = [
-"Hay momentos en los que no me gusta estar solo. Pero tampoco quiero que todos me acompañen, solo te quiero a ti",
-"¡Me acabo de dar cuenta de que has sido rico todo este tiempo! Como lo que he estado buscando todo este tiempo. ¿Quieres ser mi novia?",
-"Agradezco a mis ojos, porque estos ojos me llevaron a encontrarte",
-"¿Puedo enviarte un CV o no? Porque quiero postularme para ser novia",
-"No soy el más grande, pero estoy seguro que si puedo hacerte feliz con amor y cariño, ¿me quieres verdad?",
-"Solo soy una persona común que tiene muchos defectos y puede que no merezca tu amor, pero si estás dispuesto a aceptarme como amante, prometo hacer lo que sea mejor para ti. ¿Aceptarás mi amor?",
-"Quiero decir algo. Me gusta desde hace mucho tiempo, pero no me atrevo a decirlo. Entonces, decidí solo WA. Quiero que seas mi novia",
-"Quiero decir algo que no puedo contener más. Te amo, ¿serás mi novia?",
-"Quiero ser una persona que pueda hacerte reír y sonreír todos los días. ¿Serás mi novia?",
-"Quiero tener una charla seria contigo. Todo este tiempo he albergado sentimientos por ti y siempre he estado pendiente de ti. Si no te importa, ¿quieres ser mi novia?",
-"Te miro y veo el resto de mi vida ante mis ojos.",
-"No tengo todo, pero al menos tengo suficiente amor para ti",
-"Me gustaste desde el principio. Eres tan simple, pero la sencillez es muy especial a mis ojos. Será perfecto si eres especial en mi corazón",
-"Realmente estoy enamorado de ti. ¿Serás mía?",
-"No te dije que no porque no tengo cupo ni crédito, pero estoy disfrutando de este anhelo por ti. Tal vez te sorprendas al escuchar eso. Siempre me has gustado",
-"No quiero que seas el sol de mi vida, porque aunque hace calor estás muy lejos. Tampoco quiero que seas aire, porque aunque te necesito y estás muy cerca, pero todos pueden respirarte también. Solo quiero que seas sangre que pueda estar muy cerca de mí",
-"No sé hasta cuándo terminará mi edad. Todo lo que sé es que mi amor es para siempre solo para ti",
-"Realmente disfruté el tiempo que pasamos juntos hoy. También nos conocemos desde hace mucho tiempo. En este día soleado, quiero expresarte que te amo",
-"Siempre imaginé lo hermoso que sería si algún día pudiéramos construir un arca de una casa y vivir juntos hasta el final de la vida. Sin embargo, todo eso no habría sucedido si los dos no hubiéramos estado juntos hasta ahora. ¿Serás mi amante?",
-"Me preparo mentalmente para hoy. Tienes que ser mi novia para tratar este amor incontrolable",
-"Sé que no tenemos la misma edad, pero ¿puedo vivir contigo por el resto de mi vida?",
-"Sé que hemos sido amigos durante mucho tiempo. ¿Pero no está mal si me gustas? Cualquiera que sea tu respuesta, acepto. Lo más importante es ser honesto desde el fondo de mi corazón",
-"No puedo empezar esto primero, pero te daré un código que me gustas. Si entiendes este código, estaremos juntos",
-"Soy demasiado estúpido o eres demasiado egoísta para hacer que me enamore de ti",
-"Cualquier cosa sobre ti, nunca he encontrado aburrimiento en ello. Porque estar a tu lado, el regalo más hermoso para mí. Sé mi amante, hey tú",
-"Con el permiso de Alá y la bendición de mamá papá, ¿quieres ser mi novio o no?",
-"¿Y si nos convertimos en una banda de ladrones? Yo robé tu corazón y tú me robaste el mío",
-"Feliz es que tú y yo nos hemos convertido en nosotros",
-"Mañana, si no funciona, puedo registrarme para ser tu novia. Déjame tener trabajo para pensar siempre en ti",
-"Déjame hacerte feliz para siempre. Solo tienes que hacer una cosa: Enamórate de mí",
-"Que toda mi alegría sea tuya, toda tu tristeza sea mía. ¡Que el mundo entero sea tuyo, solo tú seas mía!",
-"Que el pasado sea mi pasado, pero por el presente, ¿serás tú mi futuro?",
-"¿Puedes darme una dirección a tu corazón? Parece que me he perdido en tus ojos",
-"No es el trono o el tesoro lo que busco, sino el retorno de mi amor lo que espero de ti. La respuesta es sí",
-"La forma en que puedes hacerme reír incluso en los días más oscuros me hace sentir más ligero que cualquier otra cosa. Quiero que seas mía",
-"Mi amor por ti es incuestionable porque este amor es sincero desde el fondo de mi corazón",
-"Mi amor por ti es como un número del 5 al 10. No hay segundo. Quiero que seas la única mujer en mi corazón",
-"Qué chico se atreve a lastimarte. Aquí te trataré, mientras quieras ser mi novia",
-"Oye, ¿qué estás haciendo? Sal de la casa y mira la luna esta noche. La luz es hermosa y encantadora, pero sería aún más hermosa si yo estuviera a tu lado. ¿Qué tal si estamos juntos?"
+"Ada kalanya saya tidak suka sendirian. Tapi aku juga tidak ingin semua orang bersamaku, aku hanya ingin kamu",
+"Aku baru menyadari bahwa kamu sudah kaya selama ini! Seperti apa yang aku cari selama ini, apakah kamu mau menjadi pacarku?",
+"Aku berterima kasih pada mataku, karena mata ini menuntunku untuk menemukanmu",
+"Bolehkah saya mengirimkan CV atau tidak? Karena aku ingin melamar menjadi pacarmu",
+"Aku memang bukan yang terhebat, tapi aku yakin jika aku bisa membahagiakanmu dengan cinta dan kasih sayang, kamu pasti mencintaiku kan?",
+"Aku hanya orang biasa yang memiliki banyak kekurangan dan mungkin tidak pantas mendapatkan cintamu, tapi jika kamu bersedia menerimaku sebagai kekasih, aku berjanji akan melakukan yang terbaik untukmu, maukah kamu menerima cintaku?",
+"Aku ingin mengatakan sesuatu. Aku sudah menyukaimu sejak lama, tapi aku tidak berani mengatakannya. Jadi, saya memutuskan hanya WA. Aku ingin kamu menjadi pacarku."
+"Aku ingin mengatakan sesuatu yang tidak bisa kutahan lagi. Aku mencintaimu, maukah kamu menjadi pacarku?",
+"Aku ingin menjadi orang yang bisa membuatmu tertawa dan tersenyum setiap hari, maukah kamu menjadi pacarku?", "Aku ingin menjadi orang yang bisa membuatmu tertawa dan tersenyum setiap hari, maukah kamu menjadi pacarku?",
+"Aku ingin berbicara serius denganmu. Selama ini aku memendam perasaan padamu dan aku selalu memperhatikanmu. Jika kamu tidak keberatan, maukah kamu menjadi pacarku?",
+"Aku melihatmu dan aku melihat sisa hidupku di depan mataku",
+"Aku tidak memiliki segalanya, tapi setidaknya aku memiliki cukup cinta untukmu",
+"Aku menyukaimu sejak awal. Kamu sangat sederhana, tetapi kesederhanaan itu sangat istimewa di mataku. Akan menjadi sempurna jika kamu istimewa di hatiku",
+"Aku benar-benar jatuh cinta padamu, maukah kamu menjadi milikku?",
+"Aku tidak mengatakan tidak karena aku tidak punya kuota atau pulsa, tapi aku menikmati kerinduanku padamu. Anda mungkin akan terkejut mendengarnya. Aku selalu menyukaimu,
+"Aku tidak ingin kamu menjadi matahari dalam hidupku, karena meskipun panas, kamu jauh. Aku juga tidak ingin kamu menjadi udara, karena meskipun aku membutuhkanmu dan kamu sangat dekat, tapi semua orang bisa menghirupmu juga. Saya hanya ingin kamu menjadi darah yang bisa sangat dekat dengan saya",
+"Saya tidak tahu sampai kapan usia saya akan berakhir. Yang saya tahu adalah bahwa cinta saya selamanya hanya untuk Anda",
+"Saya sangat menikmati waktu yang kita habiskan bersama hari ini. Kita juga sudah saling mengenal satu sama lain untuk waktu yang lama. Di hari yang cerah ini, saya ingin mengungkapkan kepada Anda bahwa saya mencintaimu",
+"Saya selalu membayangkan betapa indahnya jika suatu hari nanti kita dapat membangun bahtera rumah tangga dan hidup bersama hingga akhir hayat. Namun, semua itu tidak akan terjadi jika kita berdua tidak bersama hingga saat ini, maukah kamu menjadi kekasihku?",
+"Saya mempersiapkan diri secara mental untuk hari ini. Kamu harus menjadi kekasihku untuk menghadapi cinta yang tak terkendali ini",
+"Aku tahu kita tidak seumuran, tapi bisakah aku hidup bersamamu seumur hidupku?",
+"Aku tahu kita sudah berteman sejak lama, tapi bukankah salah jika aku menyukaimu? Apapun jawabanmu, aku menerimanya. Yang paling penting adalah jujur dari lubuk hatiku yang paling dalam",
+"Aku tidak bisa memulainya lebih dulu, tapi aku akan memberimu kode bahwa aku menyukaimu. Jika kamu mengerti kode ini, kita akan bersama,
+"Aku terlalu bodoh atau kamu terlalu egois untuk membuatku jatuh cinta padamu."
+"Apapun tentangmu, aku tidak pernah menemukan kebosanan di dalamnya. Karena berada di sisimu, adalah anugerah terindah bagiku. Jadilah kekasihku, hei kamu",
+"Dengan izin Allah dan restu ayah dan ibu, kamu mau jadi pacarku atau tidak?",
+"Bagaimana jika kita menjadi geng pencuri? Aku mencuri hatimu dan kamu mencuri hatiku",
+"Bahagianya kamu dan aku telah menjadi kita."
+"Besok, jika tidak berhasil, aku bisa mendaftar menjadi pacarmu. Biarlah aku punya pekerjaan untuk selalu memikirkanmu",
+"Biarkan aku membuatmu bahagia selamanya. Kamu hanya perlu melakukan satu hal: Jatuh cinta padaku",
+"Biarlah semua kegembiraanku menjadi milikmu, semua kesedihanmu menjadi milikku, biarlah seluruh dunia menjadi milikmu, hanya kamu yang menjadi milikku!",
+"Biarlah masa lalu menjadi masa laluku, tapi untuk saat ini, maukah kamu menjadi masa depanku",
+"Dapatkah kamu memberiku alamat hatimu? Aku seperti tersesat di matamu",
+"Bukan tahta atau harta yang kucari, tapi kembalinya cintaku yang kuharapkan darimu. Jawabannya adalah ya,
+"Caramu membuatku tertawa bahkan di hari tergelap sekalipun membuatku merasa lebih ringan dari apa pun. Aku ingin kamu menjadi milikku."
+"Cintaku padamu tidak perlu dipertanyakan lagi karena cinta ini tulus dari lubuk hatiku", "Cintaku padamu tidak perlu dipertanyakan lagi karena cinta ini tulus dari lubuk hatiku",
+"Cintaku padamu seperti angka dari 5 sampai 10. Tidak ada yang kedua. Saya ingin Anda menjadi satu-satunya wanita di hati saya",
+"Pria mana yang berani menyakitimu. Di sini saya akan mentraktir kamu, selama kamu mau menjadi pacar saya",
+"Hei, apa yang kamu lakukan? Keluarlah dari rumah dan lihatlah bulan malam ini. Cahayanya indah dan cantik, tapi akan lebih indah lagi jika aku ada di sisimu, bagaimana jika kita bersama?"
 ]
