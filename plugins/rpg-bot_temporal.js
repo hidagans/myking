@@ -115,5 +115,5 @@ let hoursms = ms % (60 * 60 * 1000);
 let minutes = Math.floor((hoursms) / (60 * 1000));
 let minutesms = ms % (60 * 1000);
 let sec = Math.floor((minutesms) / (1000));
-return days + " *Día(s)* ☀️\n" + hours + " *Hora(s)* ⏳\n" + minutes + " *Minuto(s)* ⏰\n" + sec + " *Segundo(s)* 🕐\n";
+return days + " *Day(s)* ☀️\n" + hours + " *Hour(s)* ⏳\n" + minutes + " *Minute(s)* ⏰\n" + sec + " *Second(s)* 🕐\n";
 }
