@@ -68,63 +68,56 @@ let username = conn.getName(who)
 //user.registered = false
 
 let TerminoA = `
-*_Toda la información que se mencione aquí no excluye a la Propietario del Bot, y Propietarios Acredores al uso de The LoliBot-MD_*
-*_No Somos responsables del desconocimiento que tenga por parte de esta información._*`.trim()
+*_Semua informasi yang disebutkan di sini tidak mengecualikan Pemilik Bot, dan Pemilik Terakreditasi untuk menggunakan MajestyBot._*
+*_Kami tidak bertanggung jawab atas ketidaktahuan Anda akan informasi ini._*`.trim()
 
 let terminoB = `    
-*TÉRMINOS DE PRIVACIDAD*
-_- Somos consciente del constante uso que le pueda dar al Bot, y también Garantizamos que la información como (imágenes, vídeos, enlaces, ubicación, Audios, Stickers, Gif, Contactos que Usted Proporcione en torno a Número(s) Oficial(es) No son ni serán Compartido Con Nadie, ni se usaran dicho Datos fuera del entorno del BOT._
+*KETENTUAN PRIVASI*
+_- Kami menyadari penggunaan Bot yang mungkin Anda lakukan secara terus menerus, dan juga menjamin bahwa informasi (gambar, video, tautan, lokasi, Audio, Stiker, Gif, Kontak, dll.) yang Anda berikan di sekitar Nomor Resmi tidak dan tidak akan dibagikan kepada siapa pun, dan juga tidak akan digunakan di luar lingkungan BOT.._
 
-_- Lo que realicé con el BOT queda solo en Usted ya que en Número(s) Oficial(es) El Chat se Borra cada 24 Horas, según el tiempo de Mensajes Temporales de WhatsApp._
+_- Apa yang saya lakukan dengan BOT tetap ada pada Anda, karena di Nomor Resmi Obrolan akan dihapus setiap 24 Jam, sesuai dengan waktu Pesan Sementara WhatsApp.._
 
-_- Es posible que en Número(s) Oficial(es) el Bot no esté Activado las 24 Horas de los 7 días de la Semana, eso no implica que no lo esté o que Propietarios NO OFICIALES puedan Hacerlo._
+_- Ada kemungkinan bahwa pada Nomor Resmi, Bot tidak Diaktifkan 24 Jam sehari, 7 hari seminggu, itu tidak berarti bahwa itu tidak atau bahwa Pemilik TIDAK RESMI dapat melakukannya.._
 
-_- El chat anónimo del comando #start, valga la redundancia no mostrará ningún dato de los Usuarios por parte de The LoliBot. Eso no implica que las personas que hagan uso de esta función puedan dar a conocer sus datos. en Número(s) Oficial(es)._
+_- Obrolan anonim dari perintah #start, demi redundansi, tidak akan menampilkan data Pengguna apa pun dari pihak LoliBot. Ini tidak menyiratkan bahwa orang yang menggunakan fungsi ini dapat mengungkapkan detail mereka. dalam Nomor Resmi._
 
-_- NO somos responsable si Hay alteraciones de este Bot no siendo Número(s) Oficial(es) y tengan de uso un Repositorio de GitHub que no corresponda al Oficial, o que implementen Usuarios de Terceros integraciones que comprometan a los(as) Usuarios(as) al utilizar Versiones no Oficiales._
-
-
-*TÉRMINOS DE USO* 
-_- La información que haya en este Bot y el/la usuario/a Haga uso de las Mismas asumirá saber los Términos y Condiciones de tal forma que no habrá incovenientes al hacer un uso Particular de las Funciones del Bot._
-
-_- El Bot contiene Material que solo puede ser visible para mayores de 18 Años, NO somos responsable si no cumple con la edad mínima para usar el Material para Adultos._
-
-_- Las imágenes, Vídeos y Audios que tenga este Bot son de uso Público, Pero se considerará Falta de Respeto al realizar Ediciones en el Material ya exitente que porte Nombre del Bot o información relevante._
-
-_- Al hacer uso de una solicitud para ingreso de grupo con Una Cuenta Oficial, es recomendable que el grupo no cuente con temas de Odio, virus, contenido indebido, temas de discriminación u campañas sin fundamentos._
-
-_- Si ha recibido un Comunicado Oficial siendo Número(s) Oficial(es) Mantener el Respeto de la misma manera si recibe un Mensaje sin haber usado un Comando Mantener el Respeto ya que puede en este ultimo caso ser una Persona Real._
+_- Kami TIDAK bertanggung jawab jika ada perubahan pada Bot ini yang bukan Nomor Resmi dan menggunakan repositori GitHub yang tidak resmi, atau mengimplementasikan integrasi Pengguna Pihak Ketiga yang membahayakan Pengguna dengan menggunakan versi yang tidak resmi._
 
 
-*CONDICIONES DE USO*
-_- NO haga ni intente Llamar o hacer Videollamada al Bot siendo Número(s) Oficial(es) ya que obstaculiza el funcionamiento del BOT._
+*KETENTUAN PENGGUNAAN* 
+_- Informasi dalam Bot ini dan pengguna yang menggunakannya mengasumsikan pengetahuan tentang Syarat dan Ketentuan sehingga tidak akan ada ketidaknyamanan dalam menggunakan fungsi Bot tertentu.._
 
-_- NO usar el Bot siendo Número(s) Oficial(es) para llevar a cabo alguna acción hostil que pueda verse comprometida el Funcionamiento del BOT._
+_- Bot berisi Materi yang hanya dapat dilihat oleh mereka yang berusia di atas 18 tahun, kami TIDAK bertanggung jawab jika Anda tidak memenuhi usia minimum untuk menggunakan Materi Dewasa._
 
-_- NO use el comando de SPAM repetidamente, ya que Provocará un Mal funcionamiento en el BOT, tampoco envie al BOT mensajes que puedan comprometer el Funcionamiento de la misma._
+_- Gambar, Video, dan Audio yang dimiliki Bot ini adalah untuk penggunaan publik, tetapi akan dianggap tidak sopan jika melakukan pengeditan terhadap materi yang sudah ada yang membawa nama Bot atau informasi yang relevan._
 
-_- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodidad, intranquilidad, molestia u otro termino tajante, se tomarán las respectivas sanciones o llamados de alerta para prevalecer la integridad de los/las Usuarios(as) y funcionamiento de The LoliBot-MD._
+_- Ketika menggunakan aplikasi untuk keanggotaan grup dengan Akun Resmi, disarankan agar grup tersebut tidak mengandung ujaran kebencian, virus, konten yang tidak pantas, tema diskriminatif, atau kampanye yang tidak berdasar._
+
+_- Jika Anda telah menerima Komunike Resmi saat menjadi Nomor Resmi, Pertahankan rasa hormat dengan cara yang sama jika Anda menerima Pesan tanpa menggunakan Perintah Pertahankan rasa hormat karena Anda mungkin dalam kasus terakhir adalah Orang Sejati._
 
 
-*ESTE ES EL REPOSITORIO OFICIAL*
- *${md}*
+*KETENTUAN PENGGUNAAN*
+_- JANGAN melakukan atau mencoba melakukan Panggilan atau Panggilan Video ke Bot sebagai Nomor Resmi karena hal ini akan menghalangi pengoperasian BOT.._
 
-*GRUPOS UPDATE ACTUALIZACIONES Y NOVEDADES SOBRE EL BOT*
-*imfomarte sobre la nueva actualizaciónes y novedades de bot aqui*
+_- TIDAK menggunakan Bot sebagai Nomor Resmi untuk melakukan tindakan permusuhan yang dapat membahayakan pengoperasian BOT.._
+
+_- JANGAN gunakan perintah SPAM berulang kali, karena akan menyebabkan BOT tidak berfungsi, atau mengirim pesan ke BOT yang dapat membahayakan pengoperasian BOT._
+
+_- Penggunaan perintah tertentu yang dimaksudkan untuk merusak ketidaknyamanan, ketidaknyamanan, gangguan, atau istilah kasar lainnya akan diberikan sanksi atau peringatan yang sesuai untuk menjaga integritas Pengguna dan pengoperasian MajestyBot._
+
+
+*GRUP INFO UPDATE DAN TERBARU TENTANG BOT*
+*Cari tahu tentang pembaruan dan berita bot baru di sini*
 ${nna}
 
-*FACEBOOK*
-~ _puede unirte al grupo asistencia facebook del bot_
-*https://facebook.com/groups/872989990425789/*
 
-
-*~ Muchas Gracias Por tomarte el tiempo en informate sobre The LoliBot-MD*
+*~ Terima kasih telah meluangkan waktu untuk memberi tahu diri Anda tentang MajestyBot.*
 `.trim()
 conn.sendButton(m.chat, TerminoA, terminoB, pp, [
 ['ɢʀᴜᴘᴏs', `#grupos`]], m)
 }
 
-handler.customPrefix = /terminos|términos|términos, condiciones y privacidad|terminos, condiciones y privacidad|términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i
+handler.customPrefix = /S&K|Syarat & Ketentuan|syarat & ketentuan|syarat|ketentuan|s&k/i
 handler.command = new RegExp
 //handler.register = true
 handler.exp = 70
