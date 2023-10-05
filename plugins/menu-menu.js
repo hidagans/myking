@@ -101,8 +101,8 @@ ${readMore}
 ┊□ _${usedPrefix}estado_
 ┊□ _${usedPrefix}ping_
 ┊□ _Bot_
-┊□ _¿Apa yang dimaksud dengan Bot?_
-┊□ _Syarat dan Ketentuan_
+┊□ _masih liat_
+┊□ _S&K_
 └─────────────
 
 ┌───⊷ *MASUKAN BOT KE GRUP*
