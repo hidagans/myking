@@ -5,7 +5,7 @@ import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
-if (!text) throw `*🤔Que esta buscado? 🤔*\n*Ingrese el nombre del la canción*\n\n*Ejemplo:*\n#play lgante bar`
+if (!text) throw `*🤔Apa yang Anda cari? 🤔*\n*Masukkan judul lagu*\n\n*Contoh:*\n#play Nemen`
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
@@ -17,8 +17,8 @@ conn.sendFile(m.chat, yt_play[0].thumbnail, 'thumbnail.jpg', `
 *${yt_play[0].title}*
 *⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
-*⏰ Duración:* ${secondString(yt_play[0].duration.seconds)}
-*👉🏻Aguarde un momento en lo que envío su ${additionalText}*
+*⏰ Durasi:* ${secondString(yt_play[0].duration.seconds)}
+*👉🏻Tunggu bentar yak otw kirim ${additionalText}*
 `.trim(), m)
 if (command == 'play') {	
 try {
@@ -110,7 +110,7 @@ const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
 const dl_url = await yt.video[q].download()
 const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
-await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*🔰 Aqui esta tu video*\n*🔥 Titulo: ${ttl}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*🔰 Ini videonya*\n*🔥 Judul: ${ttl}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch {   
 try {  
 let mediaa = await ytMp4(yt_play[0].url)
@@ -123,7 +123,7 @@ let n = lolh.result.title || 'error'
 let n2 = lolh.result.link
 let n3 = lolh.result.size
 let n4 = lolh.result.thumbnail
-await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `*🔰 Aqui esta tu video*\n*🔥 Titulo: ${n}`, thumbnail: await fetch(n4) }, { quoted: m })
+await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `*🔰 Ini videonya*\n*🔥 Judul: ${n}`, thumbnail: await fetch(n4) }, { quoted: m })
 } catch {
 }}}    
 }} catch {
@@ -150,10 +150,10 @@ var d = Math.floor(seconds / (3600 * 24));
 var h = Math.floor((seconds % (3600 * 24)) / 3600);
 var m = Math.floor((seconds % 3600) / 60);
 var s = Math.floor(seconds % 60);
-var dDisplay = d > 0 ? d + (d == 1 ? " día, " : " días, ") : "";
-var hDisplay = h > 0 ? h + (h == 1 ? " hora, " : " horas, ") : "";
-var mDisplay = m > 0 ? m + (m == 1 ? " minuto, " : " minutos, ") : "";
-var sDisplay = s > 0 ? s + (s == 1 ? " segundo" : " segundos") : "";
+var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
+var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
+var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
+var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
 return dDisplay + hDisplay + mDisplay + sDisplay};
 
 function bytesToSize(bytes) {
