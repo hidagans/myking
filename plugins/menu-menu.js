@@ -111,7 +111,7 @@ ${readMore}
 └─────────────
 
 ┌───⊷ *SERBOT & JADIBOT*
-┆ 🤖 _${usedPrefix}serbot_
+┆ 🤖 _${usedPrefix}jadibot_
 ┆ 🤖 _${usedPrefix}stop_
 ┆ 🤖 _${usedPrefix}bots_
 └─────────────
