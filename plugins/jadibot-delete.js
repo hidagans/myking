@@ -15,15 +15,15 @@ let handler  = async (m, { conn }, args) => {
 let parentw = conn
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let uniqid = `${who.split`@`[0]}`
-if (global.conn.user.jid !== conn.user.jid) return conn.sendMessage(m.chat, {text: '*Use este comando directamente en el numero del Bot principal*'}, { quoted: m }) 
+if (global.conn.user.jid !== conn.user.jid) return conn.sendMessage(m.chat, {text: '*Gunakan perintah ini secara langsung pada nomor Bot utama*'}, { quoted: m }) 
 else {
-await conn.sendMessage(m.chat, {text: "*👋 Adiós Bot, haz dejado de ser un Bot*"}, { quoted: m }) 
+await conn.sendMessage(m.chat, {text: "*👋 Selamat tinggal Bot, Anda bukan lagi Bot*"}, { quoted: m }) 
 }
 try {
 fs.rmdir("./jadibts/" + uniqid, { recursive: true, force: true })
-await conn.sendMessage(m.chat, {text : "*Todos los archivos de session fueron eliminados*" } , { quoted: m })
+await conn.sendMessage(m.chat, {text : "*Semua file sesi telah dihapus*" } , { quoted: m })
 } catch(err) {
-console.error('La carpeta o archivo de sesion no existen ', err)   
+console.error('Folder atau file sesi tidak ada ', err)   
 }}
 handler.help = ['deletebot']
 handler.tags = ['jadibot']
