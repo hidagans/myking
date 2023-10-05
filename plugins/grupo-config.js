@@ -11,19 +11,19 @@ let isClose = { // Switch Case Like :v
 if (isClose === undefined)
 throw `
 ${mg}*╭━[ ${wm} ]━⬣*
-*┃➥ ${usedPrefix + command} abrir*
-*┃➥ ${usedPrefix + command} cerrar*
+*┃➥ ${usedPrefix + command} buka*
+*┃➥ ${usedPrefix + command} tutup*
 *╰━━━━━[ 𓃠 ${vs} ]━━━━━⬣*
 `.trim()
 await conn.groupSettingUpdate(m.chat, isClose)
   
 if (isClose === 'not_announcement'){
-conn.sendButton(m.chat, `${eg}𝙔𝙖 𝙥𝙪𝙚𝙙𝙚 𝙚𝙨𝙘𝙧𝙞𝙗𝙞 𝙩𝙤𝙙𝙤 𝙚𝙣 𝙚𝙨𝙩𝙚 𝙜𝙧𝙪𝙥𝙤!!`, `𝙂𝙧𝙪𝙥𝙤 𝙖𝙗𝙞𝙚𝙧𝙩𝙤\n${wm}`, pp, [['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 ✅', `.cuentasgb`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `/menu`]], m)
+conn.sendButton(m.chat, `${eg}Kamu dapat mengirim di grup ini!!`, `Group telah di buka\n${wm}`, pp, [['Akun resmi ✅', `.cuentasgb`], ['Menu ☘️', `/menu`]], m)
 }
   
 if (isClose === 'announcement'){
 //m.reply(`${eg}*𝙂𝙍𝙐𝙋𝙊 𝘾𝙀𝙍𝙍𝘼𝘿𝙊*\n𝙎𝙊𝙇𝙊 𝙇𝙊𝙎 𝘼𝘿𝙈𝙄𝙉𝙎 𝙋𝙐𝙀𝘿𝙀𝙉 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊`)
-conn.sendButton(m.chat, `${eg}𝙎𝙤𝙡𝙤 𝙡𝙤𝙨 𝙖𝙙𝙢𝙞𝙣 𝙥𝙪𝙚𝙙𝙚 𝙚𝙨𝙘𝙧𝙞𝙗𝙞 𝙚𝙣 𝙚𝙨𝙩𝙚 𝙜𝙧𝙪𝙥𝙤!!`, `𝙂𝙧𝙪𝙥𝙤 𝙘𝙚𝙧𝙧𝙖𝙙𝙤\n${wm}`, pp, [['𝙈𝙤𝙢𝙚𝙣𝙩𝙤 𝙖𝙙𝙢𝙞𝙣😎', '.s'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `/menu`]], m)
+conn.sendButton(m.chat, `${eg}Hanya admin yang dapat menulis di grup ini!!`, `Grup telah di tutup\n${wm}`, pp, [['Momen admin😎', '.s'], ['Menu ☘️', `/menu`]], m)
 }  
  }
 handler.help = ['group open / close', 'grupo abrir / cerrar']
