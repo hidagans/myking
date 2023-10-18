@@ -16,23 +16,23 @@ const fkontak = {
 
 let user = global.db.data.users[m.sender]
 let premium = user.premium  
-let minar = `${pickRandom(['Que pro 😎 has minado',
-'🌟✨ Genial!! Obtienes',
-'WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes',
-'Has Minado!!',
-'😲 Lograste Minar la cantidad de',
-'Tus Ingresos subiran gracias a que minaste',
-'⛏️⛏️⛏️⛏️⛏️ Minando',
-'🤩 SII!!! AHORA TIENES',
-'La minaria esta de tu lado, por ello obtienes',
-'😻 La suerte de Minar',
-'♻️ Tu Mision se ha cumplido, lograste minar',
-'⛏️ La Mineria te ha beneficiado con',
-'🛣️ Has encontrado un Lugar y por minar dicho lugar Obtienes',
-'👾 Gracias a que has minado tus ingresos suman',
-'Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
+let minar = `${pickRandom(['Sungguh profesional 😎 Anda telah menambang',
+'🌟✨ Bagus! Anda mendapatkan',
+'WOW!!! Anda adalah Penambang yang hebat ⛏️ Anda mendapatkan',
+'Kamu telah menambang!!',
+'😲 Kamu berhasil menambang sejumlah',
+'Penghasilan Anda akan meningkat karena Anda menambang',
+'⛏️⛏️⛏️⛏️⛏️ Penambangan',
+'🤩 YA!!! SEKARANG KAMU MEMILIKI',
+'Minaria ada di sisi Anda, jadi Anda mendapatkan',
+'😻 Keberuntungan Mining',
+'♻️ Misi Anda telah tercapai, Anda berhasil menambang',
+'⛏️ Penambangan telah memberi Anda penghasilan dengan',
+'🛣️ Anda telah menemukan Tempat dan untuk menambang tempat itu Anda mendapatkan',
+'👾 Berkat fakta bahwa Anda telah menambang, penghasilan Anda menjadi',
+'Selamat! Anda sekarang memiliki','⛏️⛏️⛏️ Kamu mendapatkan'])}`
 
-let pp = 'https://media.tvalacarta.info/programas/0/clantve/44-gatos/aida-la-gata-robot.jpg'
+let pp = 'https://i.imgur.com/ODdpfPx.png'
 
 let aqua = `${pickRandom([0, 2, 3, 1, 5])}` * 1
 let aquapremium = `${pickRandom([2, 4, 6, 7, 5, 9])}` * 1
@@ -53,7 +53,7 @@ let money = `${pickRandom([100, 200, 250, 300, 370, 400, 450, 480, 500, 510, 640
 let moneypremium = `${pickRandom([500, 600, 700, 800, 900, 1000, 1050, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1850, 1950, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3400, 3500, 3600, 3700, 3800, 3850, 3900, 3950, 4000])}` * 1
 
 let time = user.lastcoins + 600000 //10 min 
-if (new Date - user.lastcoins < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('money')}⛏️*`, fkontak,  m)
+if (new Date - user.lastcoins < 600000) return await conn.reply(m.chat, `*⏱️ Silahkan kembali lagis setelah ${msToTime(time - new Date())} untuk melanjutkan penambangan ${global.rpgshopp.emoticon('money')}⛏️*`, fkontak,  m)
 user.money += premium ? moneypremium : money  
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
@@ -61,7 +61,7 @@ for (let reward of Object.keys(recompensas)) {
     user[reward] += recompensas[reward]
 texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 
-let gat = `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*\n\n🍁 𝗕 𝗢 𝗡 𝗢\n${texto}\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`
+let gat = `*${premium ? '🎟️ Hadiah Premium' : '🆓 Hadiah Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*\n\n🍁 BONUS\n${texto}\n\n🎟️ PREMIUM ⇢ ${premium ? '✅' : '❌'}\n${wm}`
 await conn.sendFile(m.chat, pp, 'gata.jpg', gat, fkontak)
 /*conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${money}* 〽️`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
@@ -72,7 +72,7 @@ user.lastcoins = new Date * 1
 }
 handler.help = ['minar2']
 handler.tags = ['loli']
-handler.command = ['minar2', 'miming2', 'mine2', 'minarlolicoins', 'minarcoins', 'minarloli'] 
+handler.command = ['mining2', 'mine2', 'miningcoins'] 
 handler.fail = null
 handler.exp = 0
 handler.register = true
