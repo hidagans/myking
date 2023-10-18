@@ -18,10 +18,10 @@ var img3 = ['https://viajes.nationalgeographic.com.es/medio/2020/05/25/agujero-a
 var img4 = ['https://pinake.files.wordpress.com/2020/09/mar-caspio.jpg','https://www.meteorologiaenred.com/wp-content/uploads/2020/03/Formaci%C3%B3n-del-mar-Caspio.jpg','https://www.gaceta.unam.mx/wp-content/uploads/2021/01/caspdes.jpg','https://viajes.chavetas.es/wp-content/uploads/albums/uzbekistan16/d11-05.jpg','https://www.caracteristicas.co/wp-content/uploads/2017/03/mares-4-e1565805117646.jpg'].getRandom()
 var img5 = ['https://www.caracteristicas.co/wp-content/uploads/2018/11/oceano-pacifico-2-e1583028795824.jpg','https://www.caracteristicas.co/wp-content/uploads/2018/10/oceano-pacifico-arrefice-e1540842615839.jpg','https://ecologismos.com/wp-content/2017/12/reservas-marinas.jpg','https://www.nationalgeographic.com.es/medio/2021/06/07/atun-rojo_d35c81ef_1280x853.jpg','https://elsumario.com/wp-content/uploads/2018/09/tiburon-1.jpg'].getRandom()
 
-var mensajePesca = [`𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 𝙇𝘼 ${rpgg.emoticon('fishingrod')} 𝘾𝘼Ñ𝘼 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼𝙍...`, `🪣 𝘼𝙇𝙄𝙎𝙏𝘼𝙉𝘿𝙊 𝙄𝙈𝙋𝙇𝙀𝙈𝙀𝙉𝙏𝙊𝙎 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼...`, `📡 𝘽𝙐𝙎𝘾𝘼𝙉𝘿𝙊 𝙇𝙐𝙂𝘼𝙍 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼...`, `𝙀𝙉 𝙃𝙊𝙍𝘼 𝘽𝙐𝙀𝙉𝘼!! 𝙃𝙊𝙔 𝙎𝙀𝙍𝘼 𝙐𝙉𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼 🌤️`, `𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 ${rpgshopp.emoticon('pancingan')} 𝙂𝘼𝙉𝘾𝙃𝙊 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼`, `🌊 𝙀𝙉 𝘽𝙍𝙀𝙑𝙀 𝙀𝙈𝙋𝙀𝙕𝘼𝙍𝘼 𝙇𝘼 𝙋𝙀𝙎𝘾𝘼!!`].getRandom()
-var mensajePesca2 = [`𝙋𝙍𝙀𝙋𝘼𝙍𝘼𝙉𝘿𝙊 𝙇𝘼 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, `💥 𝙋𝘼𝙍𝙀𝘾𝙀 𝙌𝙐𝙀 𝙊𝘽𝙏𝙀𝙉𝘿𝙍𝘼𝙎 𝙈𝙐𝘾𝙃𝙊𝙎 𝙋𝙀𝘾𝙀𝙎`, `𝙏𝙄𝙀𝙉𝙀𝙎 𝙈𝙐𝘾𝙃𝘼 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨ 𝙋𝘼𝙍𝘼 𝙐𝙉𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼`, `𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘿𝙀 ${rpgg.emoticon('fishingrod')} 𝙔 ${rpgshopp.emoticon('pancingan')} 𝙀𝙎𝙏𝘼𝙉  𝘼𝘾𝙏𝙊𝙎 𝙋𝘼𝙍𝘼 𝙀𝙎𝙏𝘼 𝙂𝙍𝘼𝙉 𝙋𝙀𝙎𝘾𝘼!!`, `🍀 𝙇𝘼 𝙎𝙐𝙀𝙍𝙏𝙀 𝙏𝙀 𝘽𝙍𝙄𝙉𝘿𝘼𝙍𝘼 𝙐𝙉𝘼 𝙀𝙓𝙀𝙇𝙀𝙉𝙏𝙀 𝙋𝙀𝙎𝘾𝘼`, `🌊 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 𝘿𝙀𝙇 𝘼𝙂𝙐𝘼 𝙀𝙎 𝙀𝙎𝙏𝘼𝘽𝙇𝙀 𝙋𝘼𝙍𝘼 𝘾𝙊𝙈𝙀𝙉𝙕𝘼𝙍 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`].getRandom()
-var mensajePesca3 = [`𝙏𝘼𝙇 𝙑𝙀𝙕  𝘼𝙏𝙍𝘼𝙋𝙊!! 🦀🦞🦐`, `𝙏𝘼𝙇 𝙑𝙀𝙕  𝘼𝙏𝙍𝘼𝙋𝙊!! 🦑🐙🐡`, `𝙏𝘼𝙇 𝙑𝙀𝙕  𝘼𝙏𝙍𝘼𝙋𝙊!! 🐠🐟🐬`, `𝙏𝘼𝙇 𝙑𝙀𝙕  𝘼𝙏𝙍𝘼𝙋𝙊!! 🐳🦈🐋`].getRandom()
-var mensajeLugar = [`𝙋𝙄𝙎𝘾𝙄𝙉𝘼 𝙈𝘼𝙍𝙄𝙉𝘼 𝘿𝙀 𝙎𝙄𝙉𝙂𝘼𝙋𝙐𝙍`, `𝙇𝘼𝙂𝙐𝙉𝘼 𝙏𝘼𝙉𝙂𝘼𝙉𝙄𝘾𝘼`, `𝙇𝘼𝙂𝙊 𝘽𝘼𝙄𝙆𝘼𝙇`, `𝙈𝘼𝙍 𝘾𝘼𝙎𝙋𝙄𝙊`, `𝙊𝘾𝙀𝘼𝙉𝙊 𝙋𝘼𝘾𝙄𝙁𝙄𝘾𝙊`]
+var mensajePesca = [`mempersiapkan ${rpgg.emoticon('fishingrod')} pancing...`, `🪣 menyiapkan alat pancing...`, `📡 mencari tempat memancing...`, `semoga berhasil!!! hari ini akan menjadi tangkapan yang hebat! 🌤️`, `Mempersiapkan ${rpgshopp.emoticon('pancingan')} Kail pancing`, `🌊 memancing akan segera dimulai!!`].getRandom()
+var mensajePesca2 = [`menyiapkan umpan ${rpgshopp.emoticon('umpan')}`, `💥 Sepertinya Anda akan mendapatkan banyak ikan`, `Anda memiliki banyak energi ✨ Untuk memancing yang hebat`, `tingkat Anda ${rpgg.emoticon('fishingrod')} 𝙔 ${rpgshopp.emoticon('pancingan')} adalah tindakan untuk memancing yang hebat ini!!`, `🍀 keberuntungan akan memberi Anda hasil memancing yang luar biasa`, `🌊 ketinggian air stabil untuk mulai memancing`].getRandom()
+var mensajePesca3 = [`mungkin aku menangkap!! 🦀🦞🦐`, `mungkin aku menangkap!! 🦑🐙🐡`, `mungkin aku menangkap!! 🐠🐟🐬`, `mungkin aku menangkap!! 🐳🦈🐋`].getRandom()
+var mensajeLugar = [`Danau Toba`, `Raja Ampat `, `Karimunjawa`, `Labuan Bajo`, `Pulau Derawan`]
 
 var energia = ['10', '20', '40', '60', '90']
 var carnada = ['0', '40', '80', '150', '200']
@@ -31,17 +31,17 @@ var nivelUser = ['2', '4', '5', '7', '10']
   
 const sections = [
 {
-title: htjava + ' 🛥️ 𝙇𝙐𝙂𝘼𝙍𝙀𝙎 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 ' + htjava,
+title: htjava + ' 🛥️ tempat untuk memancing ' + htjava,
 rows: [
-{title: "🎣 " + mensajeLugar[0], rowId: usedPrefix + command + ' 1', description: `𝑼𝒏𝒂 𝒑𝒊𝒔𝒄𝒊𝒏𝒂 𝒑𝒂𝒏𝒐𝒓𝒂𝒎𝒊𝒄𝒂 𝒄𝒐𝒏 𝒗𝒂𝒓𝒊𝒂𝒔 𝒆𝒔𝒑𝒆𝒄𝒊𝒆𝒔 𝒎𝒂𝒓𝒊𝒏𝒂𝒔!!\n`},
-{title: "🎣 " + mensajeLugar[1], rowId: usedPrefix + command + ' 2', description: `𝑨𝒕𝒓𝒆𝒗𝒆𝒕𝒆 𝒂 𝒑𝒆𝒔𝒄𝒂𝒓 𝒆𝒏 𝒍𝒂 𝑳𝒂𝒈𝒖𝒏𝒂 𝒎𝒂𝒔 𝒅𝒊𝒗𝒆𝒓𝒔𝒂 𝒅𝒆𝒍 𝑴𝒖𝒏𝒅𝒐!!\n`}, 
-{title: "🎣 " + mensajeLugar[2], rowId: usedPrefix + command + ' 3', description: `𝑪𝒐𝒏𝒔𝒊𝒅𝒆𝒓𝒂𝒅𝒂 𝒍𝒂 𝑴𝒂𝒅𝒓𝒆 𝒅𝒆 𝒍𝒐𝒔 𝑳𝒂𝒈𝒐𝒔, 𝒂𝒒𝒖𝒊 𝒕𝒂𝒍 𝒗𝒆𝒛 𝒆𝒔𝒕𝒆𝒏 𝒍𝒐𝒔 𝑪𝒂𝒍𝒂𝒎𝒂𝒓𝒆𝒔!!\n`},
-{title: "🎣 " + mensajeLugar[3], rowId: usedPrefix + command + ' 4', description: `𝑼𝒏 𝒍𝒂𝒈𝒐 𝒕𝒂𝒏 𝒈𝒓𝒂𝒏𝒅𝒆 𝒒𝒖𝒆 𝒆𝒔 𝒑𝒓𝒐𝒃𝒂𝒃𝒍𝒆 𝒒𝒖𝒆 𝒂𝒃𝒖𝒏𝒅𝒆 𝒎𝒖𝒄𝒉𝒂𝒔 𝒆𝒔𝒑𝒆𝒄𝒊𝒆𝒔 𝒎𝒂𝒓𝒊𝒏𝒂𝒔!!\n`},
-{title: "🎣 " + mensajeLugar[4], rowId: usedPrefix + command + ' 5', description: `𝑼𝒏 𝑴𝒂𝒓 𝒕𝒂𝒏 𝒈𝒓𝒂𝒏𝒅𝒆 𝒚 𝑷𝒓𝒐𝒇𝒖𝒏𝒅𝒐 𝑷𝒆𝒓𝒇𝒆𝒄𝒕𝒐 𝒑𝒂𝒓𝒂 𝑷𝒆𝒔𝒄𝒂𝒓!!\n`}
+{title: "🎣 " + mensajeLugar[0], rowId: usedPrefix + command + ' 1', description: `Pantai dengan panorama yang indah dengan berbagai spesies laut!!\n`},
+{title: "🎣 " + mensajeLugar[1], rowId: usedPrefix + command + ' 2', description: `Berani memancing di Danau Toba paling beragam di dunia!!\n`}, 
+{title: "🎣 " + mensajeLugar[2], rowId: usedPrefix + command + ' 3', description: `Dianggap sebagai ibu dari semua danau, di sini mungkin ada cumi-cumi.!!\n`},
+{title: "🎣 " + mensajeLugar[3], rowId: usedPrefix + command + ' 4', description: `Sebuah danau yang begitu luas sehingga banyak spesies laut yang hidup di dalamnya.!!\n`},
+{title: "🎣 " + mensajeLugar[4], rowId: usedPrefix + command + ' 5', description: `laut yang begitu luas dan dalam yang sempurna untuk memancing!!\n`}
 ]}]
 
 const listMessage = {
-text: `🦦 𝙀𝙇𝙄𝙅𝘼 𝙀𝙉 𝙌𝙐𝙀 𝙇𝙐𝙂𝘼𝙍 𝙌𝙐𝙄𝙀𝙍𝙀 𝙋𝙀𝙎𝘾𝘼𝙍!!`,
+text: `🦦 pilih di mana Anda ingin memancing!!`,
 footer: `*- - - - - - - - - - - - - - - - - -*
 *⊹ ${rpgshop.emoticon('stamina')}*
 ➥ *${user.stamina}%* ${rpgshopp.emoticon('stamina')}
@@ -54,8 +54,8 @@ footer: `*- - - - - - - - - - - - - - - - - -*
 *- - - - - - - - - - - - - - - - - -*
 *𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premium ? "✅": "❌"}*
 ${wm}`,
-title: `*⎔───ꕤ 𝙋𝙀𝙎𝘾𝘼 ꕤ───⎔*`,
-buttonText: `${rpgshopp.emoticon('pancing')} 𝙋𝙀𝙎𝘾𝘼𝙍 ${rpgshopp.emoticon('pancing')}`,
+title: `*⎔───ꕤ memancing ꕤ───⎔*`,
+buttonText: `${rpgshopp.emoticon('pancing')} memancing ${rpgshopp.emoticon('pancing')}`,
 sections }
 
 try {
@@ -67,8 +67,8 @@ let __temporizador1 = user.lastmancingeasy + 3600000 //1 h lastfishing
 let totalTiempo1 = clockString(__temporizador1 - new Date() * 1)
 let usuario = conn.getName(m.sender)
 
-if (user.level <= 1) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[0]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], fkontak, m)   
-if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[0]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[0]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 10'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `.inventario`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m)     
+if (user.level <= 1) return conn.sendButton( m.chat, `${fg}harus memiliki level𝙇 *${nivelUser[0]}*`, `level saat ini: *${user.level}*\n` + wm, [[`penggerak tingkat saya ${rpgg.emoticon('level')}`, `.nivel`]], fkontak, m)   
+if (user.stamina < 9) return conn.sendButton( m.chat, `${ag}Anda tidak memiliki energi yang cukup. paling tidak Anda membutuhkan *${energia[0]}%* energi ✨`, `ENERGI SAAT INI: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`BELI ${energia[0]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 10'], [`🎒 INVENTORY`, `.inv`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m)     
 if (user.pancingan > 0 ) {  
 if (user.pancing > 0 ) {
 if (user.umpan > 0 ) {
@@ -89,7 +89,7 @@ let _psenjata = `${pickRandom([1, 0, 0, 0])}`
 let psenjata = (_psenjata * 1)
            
 let pesca1 = `
-${rpgg.emoticon('fishingrod')} 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 𝘿𝙀 𝙎𝙐 𝙋𝙀𝙎𝘾𝘼!! ${pescarUsuario}
+${rpgg.emoticon('fishingrod')} hasil penangkapan ikan kamu!! ${pescarUsuario}
         
 🌊🐟🌊 Pez : Fish » ${ikan}
 🌊🐟🌊 Super Pez : Fish Super » ${lele}
@@ -101,21 +101,21 @@ ${rpgg.emoticon('fishingrod')} 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 𝘿𝙀 �
 🌊🦀🌊 Cangrejo : Crab » ${kepiting}` 
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊 𝘼 𝙋𝙀𝙎𝘾𝘼𝙍 𝙀𝙉 ${rpgg.emoticon('fishingrod')} ${mensajeLugar[0]}`, wm, null, null, null, null, null, [
+conn.sendHydrated(m.chat, `${pescarUsuario} hei bermain memancing lagi di ${rpgg.emoticon('fishingrod')} ${mensajeLugar[0]}`, wm, null, null, null, null, null, [
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 1']], null)}, 3600000) 
 
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[0]}\n` + wm, pesca1, img1, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `.inventario`]], null)}, 35000)
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[0]}\n` + wm, pesca1, img1, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `.inv`]], null)}, 35000)
 
 setTimeout(() => {
 if (psepick > 0 ) {
 user.psepick += psepick * 1
-conn.sendButton( m.chat, `🥳 𝘼𝘾𝘼𝘽𝘼𝙎 𝘿𝙀 𝙊𝘽𝙏𝙀𝙉𝙀𝙍 *${psepick}* 𝙏𝙍𝘼𝙅𝙀 𝘾𝙊𝙈𝙐𝙉!! 🧥`, wm, [[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕`, `.pescar`], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `.inventario`]], fkontak, m)}}, 33000)
+conn.sendButton( m.chat, `🥳 yang baru saja Anda peroleh *${psepick}*setelan umum!! 🧥`, wm, [[`${rpgg.emoticon('fishingrod')} memancing lagi`, `.mancing`], [`🎒 INVENTORY`, `.inv`]], fkontak, m)}}, 33000)
 
 setTimeout(() => {
 if  (psenjata > 0 ) {
 user.psenjata += psenjata * 1
-conn.sendButton( m.chat, `🥳 𝘼𝘾𝘼𝘽𝘼𝙎 𝘿𝙀 𝙊𝘽𝙏𝙀𝙉𝙀𝙍 *${psenjata}* 𝙏𝙍𝘼𝙅𝙀 𝙀𝙋𝙄𝘾𝙊!! 🥷`, wm, [[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕`, `.pescar`], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `.inventario`]], fkontak, m)}}, 30000)
+conn.sendButton( m.chat, `🥳 𝘼𝘾𝘼𝘽𝘼𝙎 𝘿𝙀 𝙊𝘽𝙏𝙀𝙉𝙀𝙍 *${psenjata}* 𝙏𝙍𝘼𝙅𝙀 𝙀𝙋𝙄𝘾𝙊!! 🥷`, wm, [[`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕`, `.mancing`], [`🎒 INVENTORY`, `.inv`]], fkontak, m)}}, 30000)
 
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
@@ -151,7 +151,7 @@ case '2':
 let __temporizador2 = user.lastmancingeasy + 3600000 //1 h
 let tiempoTotal2 = clockString(__temporizador2 - new Date() * 1)
 if (user.level <= 3) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[1]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], fkontak, m)   
-if (user.stamina < 19) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[1]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[1]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 20'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m) 
+if (user.stamina < 19) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[1]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[1]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 20'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inv`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m) 
 ///if (gancho <= 0) return conn.sendButton( m.chat, `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 *${rpgshop.emoticon('umpan')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 10 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, '.buy umpan 10'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 50 𝘾𝘼𝙍𝙉𝘼𝘿𝘼 ${rpgshopp.emoticon('umpan')}`, '.buy umpan 50']], m)
 ///if (canaDePescar <= 0) return conn.sendButton( m.chat, `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 *${rpgshop.emoticon('pancing')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 1 𝘾𝘼Ñ𝘼 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼𝙍 ${rpgshopp.emoticon('pancing')}`, '.buy pancing 1'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 2 𝘾𝘼Ñ𝘼 𝘿𝙀 𝙋𝙀𝙎𝘾𝘼𝙍 ${rpgshopp.emoticon('pancing')}`, '.buy pancing 2']], m)
 ///if (carnadaUser <= 0) return conn.sendButton(m.chat, `𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 *${rpgshop.emoticon('pancingan')}* 𝙋𝘼𝙍𝘼 𝙋𝙀𝙎𝘾𝘼𝙍`, wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙐𝙉 𝙂𝘼𝙉𝘾𝙃𝙊 ${rpgshopp.emoticon('pancingan')}`, '.buy pancingan 1'], [`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 2 𝙂𝘼𝙉𝘾𝙃𝙊 ${rpgshopp.emoticon('pancingan')}`, '.buy pancingan 2']], m)
@@ -218,7 +218,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 2']], null)}, 3600000) 
   
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[1]}\n` + wm, pesca2, img2, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000) 
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[1]}\n` + wm, pesca2, img2, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inv`]], null)}, 35000) 
                                 
 setTimeout(() => {
 conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
@@ -259,7 +259,7 @@ case '3':
 let __temporizador3 = user.lastmancingnormal + 3600000 //1 h
 let tiempoTotal3 = clockString(__temporizador3 - new Date() * 1)
 if (user.level <= 4) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[2]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], fkontak, m)
-if (user.stamina < 39) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[2]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[2]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 40'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m)  
+if (user.stamina < 39) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[2]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[2]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 40'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inv`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m)  
 
 if (new Date - user.lastmancingnormal > 3600000) {
 if (user.pancing > 2) {
@@ -323,7 +323,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 3']], null)}, 3600000) 
   
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[2]}\n` + wm, pescar3, img3, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[2]}\n` + wm, pescar3, img3, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inv`]], null)}, 35000)
                                 
 setTimeout(() => {
  conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
@@ -364,7 +364,7 @@ case '4':
 let __temporizador4 = user.lastmancinghard + 3600000 
 let tiempoTotal4 = clockString(__temporizador4 - new Date() * 1)
 if (user.level <= 6) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[3]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], fkontak, m)
-if (user.stamina < 59) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[3]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[3]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 60'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m)   
+if (user.stamina < 59) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[3]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[3]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 60'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inv`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m)   
 
 if (new Date - user.lastmancinghard > 3600000) {
 if (user.pancing > 3) {
@@ -429,7 +429,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 3']], null)}, 3600000) 
   
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[3]}\n` + wm, pescar4, img4, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[3]}\n` + wm, pescar4, img4, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inv`]], null)}, 35000)
                                 
 setTimeout(() => {
  conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
@@ -470,7 +470,7 @@ case '5':
 let __temporizador5 = user.lastmancingextreme + 3600000 //1 h
 let tiempoTotal5 = clockString(__temporizador5 - new Date() * 1)
 if (user.level <= 9) return conn.sendButton( m.chat, `${fg}𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 *${nivelUser[4]}*`, `𝙉𝙄𝙑𝙀𝙇 𝘼𝘾𝙏𝙐𝘼𝙇: *${user.level}*\n` + wm, [[`𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝙈𝙄 𝙉𝙄𝙑𝙀𝙇 ${rpgg.emoticon('level')}`, `.nivel`]], fkontak, m)
-if (user.stamina < 90) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[4]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[4]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 90'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m)   
+if (user.stamina < 90) return conn.sendButton( m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀𝙎 𝙎𝙐𝙁𝙄𝙀𝙉𝙏𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼. 𝙈𝙄𝙉𝙄𝙈𝙊 𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼𝙎 𝙐𝙉 *${energia[4]}%* 𝘿𝙀 𝙀𝙉𝙀𝙍𝙂𝙄𝘼 ✨`, `𝙀𝙉𝙀𝙍𝙂𝙄𝘼 𝘼𝘾𝙏𝙐𝘼𝙇: ${rpgg.emoticon('stamina')} *${user.stamina}%*\n` + wm, [[`𝘾𝙊𝙈𝙋𝙍𝘼𝙍 ${energia[4]}% ${rpgg.emoticon('stamina')}`, '.buy stamina 90'], [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inv`], [`𝗠 𝗘 𝗡 𝗨 ☘️`, `.menu`]], fkontak, m)   
 
 if (new Date - user.lastmancingextreme > 3600000) {
 if (user.pancing > 4) {
@@ -533,7 +533,7 @@ conn.sendHydrated(m.chat, `${pescarUsuario} 𝙃𝙀𝙔 𝙅𝙐𝙀𝙂𝘼 �
 [`${rpgg.emoticon('fishingrod')} 𝙋𝙀𝙎𝘾𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, '.pescar 3']], null)}, 3600000) 
   
 setTimeout(() => {
-conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[4]}\n` + wm, pescar5, img5, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inventario`]], null)}, 35000)
+conn.sendButton( m.chat, `${rpgg.emoticon('fishingrod')} ${mensajeLugar[4]}\n` + wm, pescar5, img5, [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 : 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `.inv`]], null)}, 35000)
                                 
 setTimeout(() => {
  conn.sendHydrated(m.chat, `${pescarUsuario} ${mensajePesca3}`, wm, null, null, null, null, null, [
